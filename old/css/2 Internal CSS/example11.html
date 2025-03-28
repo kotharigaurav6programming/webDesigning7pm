@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:nth-of-type(even){
+            color:orange;
+        }
+        li:nth-of-type(odd){
+            color:green;
+        }
+        li:nth-of-type(5){
+            color:purple;
+        }
+        li::marker{
+            color:blue;
+        }
+        li:first-child{
+            background-color: purple;
+        }
+        ul::first-line{
+            background-color: red;
+        }
+        span::after{
+            content: 'After';
+        }
+        span::before{
+            content: 'Before';
+        }
+    </style>
+</head>
+<body>
+    <span>#</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+</body>
+</html>
