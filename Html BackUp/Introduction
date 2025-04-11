@@ -1,0 +1,173 @@
+class Demo{
+    public static void main(String args[]){
+        int a = 012;
+        System.out.println(a); // 10
+    }
+}
+
+System = class 
+out = object ---> PrintStream class 
+println() = method ---> PrintStream class 
+
+int a = 012; // octal(0-7) number system
+1 x 8^1 + 2 x 8^0
+1 x 8 + 2 x 1
+8 + 2
+10
+
+int a = 0x12; // hexadecimal(0-15) number system
+1 x 16^1 + 2 x 16^0
+1 x 16 + 2 x 1
+16 + 2
+18
+
+int a=5,b=2,c;
+c = a - (-b);
+
+-----------------------------------------------------------------
+Web Application
+|-- Front End
+    |-- Web Designing
+        |-- Web Technologies
+            |-- HTML
+                |-- Creates structure of your web page
+                |-- Deals with Tags
+            |-- CSS 
+                |-- Provides some styling effects
+                |-- Deals with Properties
+            |-- Media Query
+                |-- Responsiveness
+            |-- Bootstrap
+                |-- Overcome Media Query
+                |-- classes <--- internally uses media query
+            |-- JavaScript
+                |-- Validation + Events
+            |-- React | Angular
+
+|-- Back End
+    |-- Web Development
+        |-- Programming Languages
+            |-- Java, Php, Python, .net etc
+        |-- Database
+            |-- RDBMS(Relational Database Management System)
+                |-- Tabular form
+                |-- structured data
+                |-- MySQL, SQL, Postgre, Oracle etc
+                |-- ORM Tool (Object Relational Mapping)   
+                    |-- Sequelize, TypeORM etc
+            |-- NoSQL(Not Only Structured Query Language)
+                |-- key value pair
+                |-- semi structured or unstructured data
+                |-- Mongodb, cassendra, reddis etc
+                |-- ODM Tool (Object Document Mapping)
+                    |-- Mongoose etc
+        |-- Server
+            |-- Highly configured machine
+        |-- Server Maintenance
+        |-- API (Application Programming Interface)
+
+-----------------------------------------------------------------------------
+
+Web, Web Page, Website, Web application, web server
+
+1. Web : 
+    Web is an information space, which comprises of documents and web resources(theoritical content, images and videos) and are interlinked with hyperlinks and have some specific url(uniform resource locator) which are access via internet.
+
+2. Web Page : 
+    a. Web pages are the documents which are written in a plain text.
+    b. Web pages contains multimedia content(images, audio files, video files etc).
+    c. Every web page have some specific url.
+    d. Must be deployed on atleast one server.
+
+3. Website : 
+    Website is a collection of web pages.
+    Website are of two types : 
+        a. Static website
+        b. Dynamic website
+
+    a. Static Website : 
+        i. One way communication takes place.
+        ii. Contents may not change so frequently.
+
+    b. Dynamic Website : 
+        i. Two way communication takes place.
+        ii. Contents may change accordingly.
+        iii. Dynamic websites are also known as web application 
+
+4. Web Application:
+    Application which runs on the browser and whose execution takes place on the server.It works on client server architecture.
+
+       |----------request--------------->
+    client   <-------HTTP------>   server
+      <----------response--------------|
+
+      HTTP = hyper text transfer protocol
+             stateless protocol
+
+5. Server : 
+    Server is a highly configured machine, which stores data, performs processing on that data and helps in retrieval of data.
+    Servers are of two typess : 
+        a. Web server
+        b. Application server
+
+------------------------------------------------------------
+
+Web designing ----> web technologies ------> 1. Html
+
+HTML :
+
+    1. Full form of HTML is Hyper text markup language.
+       Hypertext means a text which contains link to another text.
+       Markup language : It means tag<> based language
+       |-- It works on three terminology
+                            |-- a. Definition
+                            |-- b. Processing
+                            |-- c. Presentation
+
+    2. Html document contains multimedia content.
+    3. We need to save html document by .html or .htm extension
+    4. Output of html document is going to be displayed out on browser screen.
+    5. Html also works on three terminology : 
+        |-- Tag
+        |-- Attribute
+        |-- Element
+
+    Tag : 
+        Tags are hidden keywords, which are mainly used to display content on output screen.
+        Tags can be classified as : 
+
+            a. Empty Tag
+               |-- only opening and no closing
+               |-- <br>, <hr>, <img> etc
+               |-- also known as unbalanced tag 
+            
+            b. Container Tag
+                |-- having opening and closing both
+                |-- <html></html>, <body></body> etc
+                |-- also known as balanced tag
+
+            c. Semantic Tag
+                |-- Tags which shows there meaning or functionality to display content on screen by there name.
+                |-- <header></header> , <footer></footer> etc
+
+            d. Non-Semantic Tag or Structural Tag : 
+                |-- Doesnot show there meaning by name, they are in generalized manner.
+                |-- <form></form>, <div></div> etc
+
+            e. Self Closing Tag
+                |-- mainly used in React
+                |-- <br/> , <hr/> etc
+
+    Attribute :
+        Attribute provides some additional information.
+        <p>..........</p>
+        <p align='center'>..........</p>
+        <img src='' height='' width=''>
+
+        here align, src, height, width are attributes
+
+    Element : 
+        Html is an element which represents whole document and it comprises of opening of html tag(<html>) and closing of html tag(</html>).
+
+        Body is an element which represents documents body and it comprises of opening of body tag(<body>) and closing of body tag(</body>).
+        

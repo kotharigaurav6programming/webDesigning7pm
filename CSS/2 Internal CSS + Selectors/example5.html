@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Adjacent sibling selector(+) */
+        /* div + span {
+            background-color: crimson;
+            color: white;
+        } */
+
+        /* Direct child selector(>) */
+        /* div > span {
+            background-color: magenta;
+            color: white;
+        } */
+
+        /* General sibling selector(~) */
+        div ~ span {
+            background-color: olivedrab;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>
+            1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, magni.
+        </span>
+        <p>
+            <span>
+                2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, maxime.
+            </span>
+        </p>
+        <span>
+            3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, magni.
+        </span>
+    </div>
+    <span>
+        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, magni.
+    </span>
+    <p>
+        <span>
+            5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, maxime.
+        </span>
+    </p>
+    <span>
+        6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, magni.
+    </span>
+</body>
+</html>

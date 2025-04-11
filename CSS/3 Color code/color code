@@ -1,0 +1,58 @@
+Color Code 
+----------
+1. By Name
+   color : red
+   color : blue
+
+2. By RGB (Red Green Blue) 
+   rgb(0,0,0) = black
+   rgb(23,45,122)
+       |      |
+   rgb(255,255,255) = white
+
+3. By RGBA (Red Green Blue Alpha) 
+    Alpha represents opacity
+                     (0 to 1)
+                     0 = transparent
+                     1 = complete solid
+    rgba(0,0,0,0.5) = black
+    rgba(23,45,122,0.2)
+        |      |
+    rgba(255,255,255,0.8) = white
+
+4. By Hex code
+    #RRGGBB ---------> #RGB 
+    #998877 ---------> #987 
+
+    #987654 
+    #000000 = black
+    #a455d3
+    #ffffff = white
+
+5. By HSL(Hue Saturation Lightness)
+    Hue = degree
+    saturation = percentage % 
+    100%     75%      50%       25%       0%
+    <--------------------------------------- 
+    Darkness                           Lightness
+
+    lightness = percentage % 
+    100%     75%      50%       25%       0%
+    <--------------------------------------- 
+    Lightness                           Darkness
+
+    hsl(25,75%,20%)
+
+6. By HSLA(Hue Saturation Lightness Alpha)
+    Hue = degree
+    saturation = percentage % 
+    100%     75%      50%       25%       0%
+    <--------------------------------------- 
+    Darkness                           Lightness
+
+    lightness = percentage % 
+    100%     75%      50%       25%       0%
+    <--------------------------------------- 
+    Lightness                           Darkness
+
+    hsla(25,75%,20%,0.3)

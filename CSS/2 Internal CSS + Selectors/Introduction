@@ -1,0 +1,35 @@
+<!--  Internal CSS  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                Selectors
+                |-- Selector simply represents which property corresponding to its value is going to be implemented on which specific element.
+
+                Types of selectors : 
+                    1. Element selector or Tag Selector 
+                    2. Id Selector 
+                    3. Class Selector 
+                    4. Grouping Selector 
+                    5. Descendent Selector 
+                    6. Universal selector 
+                    7. Advanced selector 
+                        |-- Adjacent sibling selector 
+                        |-- General sibling selector 
+                        |-- Direct child selector 
+                        |-- nth-of-type selector 
+                        |-- Pseudo element selector 
+                        |-- Pseudo class selector 
+                        |-- Attribute selector 
+
+        </style>
+    </head>
+    <body>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+
+        <button></button>
+        <button></button>
+    </body>
+</html>
