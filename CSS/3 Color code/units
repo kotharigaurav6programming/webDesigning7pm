@@ -1,0 +1,26 @@
+Units
+-----
+
+1. Px (Pixel | picture element)
+   size is fixed 
+
+2. % percentage
+   sets width according to device width 
+   sets height according to its parent element
+
+3. vh and vw 
+   vh = viewport height 
+   vw = viewport width 
+
+   vh = 100% of device height
+   vw = 100% of device width 
+
+   1 vh = 1 % of device height
+   5 vh = 5 % of 500px
+        = 5/100 * 500
+        = 25px
+
+   1 vw = 1 % of device width
+   5 vw = 5 % of 500px
+        = 5/100 * 500
+        = 25px
