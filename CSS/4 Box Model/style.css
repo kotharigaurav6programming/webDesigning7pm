@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    /* background-color: grey; */
+    background: url(bg.jpeg);
+    background-size: cover;
+}
+#outerdiv{
+    padding: 10px;
+    height: 310px;
+    width: 450px;
+    /* margin:auto; */
+    background-color: lightgrey;
+    margin-top: 100px;
+    margin-left: 355px;
+    opacity: 0.9;
+}
+input[type='email'],input[type='password']{
+    height: 30px;
+    width:300px;
+    margin: 2px;
+    margin-left: 70px;
+    outline: 0px;
+    text-align: center;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-color: black;
+    background: transparent;
+}
+input[type='checkbox']{
+    height: 15px;
+    width: 15px;
+    margin-left: 70px;
+}
+input[type='submit'],input[type='reset']{
+    height:35px;
+    width: 307px;
+    border-width: 0px;
+    margin: 2px;
+    background-color: black;
+    color:white;
+    margin-left: 70px;
+}
+input[type='submit']:hover{
+    background-color: green;
+    border-radius: 5px;
+}
+input[type='reset']:hover{
+    background-color: crimson;
+    border-radius: 5px;
+}
+input[type='email']:focus,input[type='password']:focus{
+    border-bottom-color: crimson;
+}
