@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+    margin: 0px;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#container {
+    height: auto;
+    width: 90%;
+    /* background-color: grey; */
+    margin: auto;
+}
+
+#header {
+    height: 60px;
+}
+
+#logoImg {
+    height: 60px;
+}
+
+#heading {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 4px;
+    color:brown;
+}
+
+#nav {
+    height: 50px;
+    background-color: #C49102;
+    position: sticky;
+    top:0;
+}
+#nav ul{
+    list-style: none;
+    padding-top: 10px;
+}
+#nav ul li{
+    display: inline;
+}
+#nav ul li a{
+    text-decoration: none;
+    margin-left: 60px;
+    color:black;
+    font-size: 22px;
+    font-family: candara;
+}
+#nav ul li a:hover{
+    color:brown;
+}
+#nav ul li ul{
+    display: none;
+}
+#nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 160px;
+    margin-left: 270px;
+    background-color: #C49102;
+}
+#nav ul li ul li{
+    margin-left: -40px;
+    line-height: 50px;
+}
+#banner{
+    height:520px;
+    /* background-color: green; */
+}
+#bannerImg{
+    height: 100%;
+    width: 100%;
+}
