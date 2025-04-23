@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+}
+#header{
+    height:60px;
+    border-style: solid;
+    /* background-color: crimson; */
+}
+#section1{
+    height: 200px;
+    border-style: solid;
+    /* background-color: blue; */
+}
+#leftSection{
+    height: 100%;
+    width: 49.5%;
+    border-style: solid;
+    /* background-color: orange; */
+    float: left;
+}
+#rightSection{
+    height: 100%;
+    width: 49.5%;
+    border-style: solid;
+    /* background-color: brown; */
+    float: left;
+}
+#left{
+    height: 130px;
+    border-style: solid;
+    float:left;
+    width:240px;
+    margin: 30px;
+    /* background-color: dodgerblue; */
+}
+#right{
+    height: 150px;
+    border-style: solid;
+    float:right;
+    width:80px;
+    margin: 20px;
+    /* background-color: dodgerblue; */
+}
+#section2{
+    height: 200px;
+    /* background-color: green; */
+    border-style: solid;
+}
+#circle{
+    height:140px;
+    width: 140px;
+    float: left;
+    border-style: solid;
+    margin: 28px;
+    margin-left: 70px;
+    border-radius: 50%;
+    /* background-color: goldenrod; */
+}
+#section3{
+    height: 200px;
+    /* background-color: grey; */
+    border-style: solid;
+}
+#bottom1{
+    height: 100%;
+    width: 18%;
+    /* background-color: red; */
+    border-style: solid;
+    float:left;
+}
+#bottom2{
+    height: 100%;
+    width: 18%;
+    /* background-color: purple; */
+    border-style: solid;
+    float:left;
+}
+#bottom3{
+    height: 100%;
+    width: 63.02%;
+    /* background-color: darkslategrey; */
+    border-style: solid;
+    float:left;
+}
+#bottomDiv1{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+    float:left;
+}
+#bottomDiv2{
+    height: 100%;
+    width: 50%;
+    /* background-color: wheat; */
+    float:left;
+}
+#subdiv{
+    height: 80%;
+    width: 80%;
+    margin: 5%;
+    /* background-color: black; */
+    border-style: solid;
+}
+#innerdiv1,#innerdiv2{
+    height: 36%;
+    width: 90%;
+    margin: 4%;
+    border-style: solid;
+        /* background-color: red; */
+}
