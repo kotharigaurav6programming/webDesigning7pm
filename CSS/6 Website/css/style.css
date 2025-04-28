@@ -34,6 +34,7 @@
     position: sticky;
     top:0;
     z-index: 1;
+    border-radius: 20px;
 }
 #nav ul{
     list-style: none;
@@ -176,4 +177,82 @@ a, #contact3 span{
 }
 #footer{
     padding: 10px;
+}
+#section{
+    height:420px;
+    width:400px;
+    background-color: beige;
+    margin: auto;
+    margin-top: 50px;
+}
+button{
+    float: left;
+    height: 45px;
+    font-size: 16px;
+    width: 50%;
+    border-width: 0px;
+}
+#selectedOne{
+    background-color: #C49102;
+    color:white;
+}
+#selectedTwo{
+    background-color: lightgrey;
+    color:black;
+}
+#inpt{
+    height: 30px;
+    width: 300px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    background: transparent;
+    margin-left: 40px;
+    margin-top: 10px;
+    text-align: center;
+    outline: 0px;
+    border-bottom-color: black;
+    font-size: 16px;
+}
+
+#btn{
+    height: 35px;
+    width: 300px;
+    border-width: 0px;
+    margin-left: 43px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #C49102;
+    color:white;
+}
+#space{
+    padding: 40px;
+}
+#inpt:hover{
+    border-bottom-color: crimson;
+}
+#btn:hover{
+    background-color: black;
+    color:white;
+}
+#gallery{
+    height: 530px;
+}
+#galleryBox{
+    height: 380px;
+    width: 300px;
+    margin: 35px;
+    margin-top: 70px;
+    float: left;
+    overflow: hidden;
+}
+#gBox{
+    height: 380px;
+    width: 300px;
+}
+#gBox:hover{
+    transition: 0.5s;
+    /* transform: scale(1.1); */
+    transform: rotate(360deg);
+    border-radius: 50%;
 }
