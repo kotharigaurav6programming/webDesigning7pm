@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 20%;
+            background-color: crimson;
+            margin: 10px;
+        }
+        #box1{
+            animation-name: ani1;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani1 {
+            from{
+                width: 20%;
+            }
+            to{
+                width: 50%;
+            }
+        }
+
+        #box2{
+            animation-name: ani2;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani2 {
+            from{
+                width: 20%;
+            }
+            to{
+                width: 50%;
+            }
+        }
+
+        #box3{
+            animation-name: ani3;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani3 {
+            from{
+                width: 20%;
+            }
+            to{
+                width: 50%;
+            }
+        }
+
+        #box4{
+            animation-name: ani4;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ani4 {
+            from{
+                width: 20%;
+            }
+            to{
+                width: 50%;
+            }
+        }
+
+</style>
+</head>
+<body>
+    <div id="box1">ease-in</div>
+    <div id="box2">ease</div>
+    <div id="box3">ease-in-out</div>
+    <div id="box4">ease-out</div>
+</body>
+</html>
