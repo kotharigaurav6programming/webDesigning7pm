@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            height: auto;
+            background-color: dodgerblue;
+            display: flex;  
+            list-style: none;
+            padding: 10px;
+            justify-content: flex-end;
+        }
+        #nav li a{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: candara;
+            color:white;
+            margin-left: 20px;
+        }
+        @media screen and (max-width:920px){
+            #nav{
+                justify-content: center;
+            }
+        }
+        @media screen and (max-width:600px){
+            #nav{
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+            }
+        }
+
+/* #################################################### */
+#outerdiv{
+    height: auto;
+    width: 97%;
+    padding:1%;
+    border-style: solid;
+    background-color: darkslategray;
+    /* float: left;         */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:40px;
+}
+#subdiv{
+    height: auto;
+    width: 200px;
+    border-style: solid;
+    background-color: black;
+    color:white;
+    /* float: left; */
+    /* margin: 2%; */
+    padding: 2%;
+    text-align: justify;
+}
+#imgDemo{
+    height: 30vh;
+    width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+        <ul id="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+        </ul>
+
+        <div id="outerdiv">
+            <div id="subdiv">
+                <img src="img4.jpg" id="imgDemo" alt=""> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit commodi ipsam perferendis iure! Ducimus consequatur ad pariatur aliquam at architecto incidunt vitae a? Quia iusto aperiam pariatur ut veniam vero cupiditate fuga saepe, rerum.
+            </div>
+            
+            <div id="subdiv">
+                <img src="img4.jpg" id="imgDemo" alt=""> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit commodi ipsam perferendis iure! Ducimus consequatur ad pariatur aliquam at architecto incidunt vitae a? Quia iusto aperiam pariatur ut veniam vero cupiditate fuga saepe, rerum.
+            </div>
+            
+            <div id="subdiv">
+                <img src="img4.jpg" id="imgDemo" alt=""> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit commodi ipsam perferendis iure! Ducimus consequatur ad pariatur aliquam at architecto incidunt vitae a? Quia iusto aperiam pariatur ut veniam vero cupiditate fuga saepe, rerum.
+            </div>
+            
+            <div id="subdiv">
+                <img src="img4.jpg" id="imgDemo" alt=""> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit commodi ipsam perferendis iure! Ducimus consequatur ad pariatur aliquam at architecto incidunt vitae a? Quia iusto aperiam pariatur ut veniam vero cupiditate fuga saepe, rerum.
+            </div>
+    
+        </div>
+</body>
+</html>
