@@ -1,0 +1,12 @@
+Bootstrap
+---------
+1. Bootstrap is an HTML, CSS and Javascript framework, which is mainly used to make web pages responsive.
+2. Bootstrap is an open source, which means it can be downloaded free of cost from the internet.
+3. Bootstrap provides consistent design.
+4. Bootstrap is compatible with almost all modern web browsers
+5. Bootstrap internally uses media query.
+6. Bootstrap works on the concept of classes.
+7. There are several versions of bootstrap, and out of which 
+   Bootstrap 5 is the latest.
+8. Bootstrap works on grid system.
+9. We can also use CDN path to implement bootstrap without downloading it.
