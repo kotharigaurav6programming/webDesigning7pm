@@ -1,0 +1,14 @@
+<script>
+// compound interest
+var p = 1000;
+var r = 3.32;
+var t = 3;
+
+//var amt = p * Math.pow(1+r/100,t);
+var amt = p * (1+r/100)**t;
+var ci = amt - p;
+
+document.write("<br>Amount : "+amt);
+document.write("<br>Compound Interest : "+ci);
+
+</script>
