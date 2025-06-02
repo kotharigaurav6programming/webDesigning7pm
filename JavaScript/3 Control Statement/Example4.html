@@ -1,0 +1,19 @@
+<!-- Entered year is a leap year or not -->
+<script>
+    var year = 1600;
+    var res = (year%4==0 && year%100!=0)||year%400==0 ? "Year is a leap year" : "Year is not a leap year";
+
+    document.write(res);
+    /*
+    if(year%4==0){
+        if(year%100==0){
+            if(year%400==0)
+               document.write("<br>Year is a leap year");
+            else
+               document.write("<br>Year is not a leap year");
+        }else
+        document.write("<br>Year is a leap year");
+    }else   
+        document.write("<br>Year is not a leap year");
+    */
+</script>
