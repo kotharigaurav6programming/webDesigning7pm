@@ -1,0 +1,12 @@
+<script>
+    const num = prompt("Enter number");
+    if(isNaN(num) || num=='' )
+        alert("Please enter valid number");
+    else{
+        var last = num%10;
+        var middle = parseInt(num/10)%10;
+        var first = parseInt(num/100);
+        var res = last * 100 + middle*10 + first*1;
+        document.write("Reverse Number : "+res);
+    }
+</script>
