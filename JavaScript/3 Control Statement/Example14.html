@@ -1,0 +1,11 @@
+<script>
+    const num = prompt("Enter number");
+    if(isNaN(num) || num=='' )
+        alert("Please enter valid number");
+    else{
+        for(i=1;i<=num;i++){
+            if(num%i==0)
+                document.write(" "+i);
+        }
+    }
+</script>

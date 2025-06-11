@@ -1,0 +1,12 @@
+<script>
+    const num = prompt("Enter number");
+    if(isNaN(num) || num=='' )
+        alert("Please enter valid number");
+    else{
+        var fact=1;
+        for(i=1;i<=num;i++){
+            fact = fact*i;
+        }
+            document.write("<br>Factorial : "+fact+"<br>");
+    }
+</script>

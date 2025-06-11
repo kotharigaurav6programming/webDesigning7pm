@@ -1,0 +1,36 @@
+<!-- Switch control statement -->
+<script>
+    var num = parseInt(prompt("Enter number"));
+    if(isNaN(num))
+        alert("Please Enter Valid Number");
+    else{
+        var message = "Select option : \n1 for Table\n2 for Factors\n3 for Exit";
+        alert(message);
+        var choice = parseInt(prompt("Enter choice"));
+        if(isNaN(choice))
+            alert("Please Enter Valid choice");
+        else{
+            switch(choice){
+                case 1 : 
+                    var str='';
+                    for(i=1;i<=10;i++){
+                        str += num + " x " + i + " = " + (num*i) + "\n";
+                    }
+                    alert(str);
+                    break;
+                case 2 :
+                    var str = ''; 
+                    for(i=1;i<=num;i++){
+                        if(num%i==0)
+                            str += i+" ";
+                    }
+                    alert("Factors of "+num+" : "+str);
+                    break;
+                case 3 : alert("Exit Successfully");
+                        break;
+                default : alert("Invalid Selection");
+                            break;
+            }
+        }
+     }
+</script>

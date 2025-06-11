@@ -1,0 +1,27 @@
+<script>
+// example showing the concept of some additional loops in javascript
+
+var arr = [1,2,3,4,5];
+document.write("Array elements are : "+arr);
+
+document.write("<br>Array elements are : <br>");
+for(i=0;i<arr.length;i++){
+    document.write("arr["+i+"] : "+arr[i]+"<br>");
+}
+
+document.write("<br>Array elements are : <br>");
+arr.forEach(function(element){
+    document.write("element : "+element+"<br>");
+});
+
+document.write("<br>Array elements are : <br>");
+for(var index in arr){
+    document.write("<br>arr["+index+"] : "+arr[index]);
+}
+
+document.write("<br>Array elements are : <br>");
+for(var value of arr){
+    document.write("<br>value : "+value);
+}
+
+</script>

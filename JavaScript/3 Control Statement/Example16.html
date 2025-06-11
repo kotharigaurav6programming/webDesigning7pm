@@ -1,0 +1,26 @@
+<script>
+    var num = prompt("Enter number");
+    if(isNaN(num) || num=='' )
+        alert("Please enter valid number");
+    else{
+        var count=0;
+        while(num>0){
+            count++;
+            num = parseInt(num/10);
+        }
+        document.write("No. of digits : "+count);
+    }
+</script>
+
+<!-- 
+
+    initialization;
+    do{
+        
+        ....
+        inc | dec
+
+    }while(condition);
+
+
+-->

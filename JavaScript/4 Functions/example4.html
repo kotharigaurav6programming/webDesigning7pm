@@ -1,0 +1,15 @@
+<!-- With argument no return type -->
+<script>
+    function fibo(num){
+       var a = -1,b=1,c=0;
+       for(i=1;i<=num;i++){
+            c = a+b;
+            document.write(c+" ");
+                a=b;
+                b=c;
+       }
+    }
+    var num = parseInt(prompt("Enter number : "));
+    fibo(num);
+</script>
+
