@@ -1,0 +1,38 @@
+<script>
+    var arr = [51,62,233,47,54];
+    // document.write(arr);
+
+    /*
+    var res = arr.forEach((element)=>{
+        document.write("<br>element : "+element);
+    });
+    document.write("<br>"+res);
+    */
+    /*
+    var res = arr.forEach((element)=>{
+        return element;
+    });
+    document.write("<br>"+res);
+    */
+    /*
+    var res = arr.map((element)=>{
+        document.write("<br>element : "+element);
+    });
+    document.write("<br>"+res);
+    */
+
+    /*    
+    var res = arr.map((element)=>{
+        return element;
+    });
+    document.write("<br>"+res);
+   */
+
+    var res = arr.map((element)=>{
+        // return element%2==0 ? "Even" : "Odd";
+        //return element%2==0 ? true : false;
+        return element%2==0 ? element : 'odd';
+    });
+    document.write("<br>"+res);
+  
+</script>

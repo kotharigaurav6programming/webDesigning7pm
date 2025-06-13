@@ -1,0 +1,15 @@
+<script>
+    var prime = (num)=>{
+       for(i=2;i<=num/2;i++){
+            if(num%i==0)
+                break;
+       }
+       if(i>num/2 && num>1)
+            return "Prime number"
+        else
+            return "Not a prime number"
+    }
+    var num = parseInt(prompt("Enter number : "));
+    document.write(prime(num));
+
+</script>
