@@ -1,0 +1,42 @@
+<script>
+    /*
+    var arr = [   51,   62,    3,    247 ,   14];
+    document.write(arr);
+    document.write("<br>Sum : "+(arr[0]+arr[arr.length-1]));
+*/
+/*
+    var arr = [   51,   62,    3,    247 ,   14];
+    document.write(arr);
+    var min = arr[0];
+    for(var i=0;i<arr.length;i++){
+        if(min>arr[i])
+            min = arr[i];          
+    }
+
+    document.write("<br>Minimum element : "+min);
+*/
+/*
+    var arr = [1,2,3,4,5];
+    document.write(arr);
+    for(var i=0;i<arr.length;i++){
+        if(min>arr[i])
+            min = arr[i];          
+    }
+
+    document.write("<br>Minimum element : "+min);
+*/
+
+    var arr1 = [1,2,3,4,5];
+    var arr2 = [11,12,13,14,15];
+
+    document.write("<br>arr1 : "+arr1);
+    document.write("<br>arr2 : "+arr2);
+    var size = arr1.length;
+    for(var i=0;i<arr2.length;i++){
+            arr1[size] = arr2[i];
+            size++;          
+    }
+
+    document.write("<br>After Merging : "+arr1);
+
+</script>

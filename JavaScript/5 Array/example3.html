@@ -1,5 +1,5 @@
 <script>
-    var arr = [51,62,233,47,54];
+    var arr = [51,62,3,247,14];
     // document.write(arr);
 
     /*
@@ -27,12 +27,46 @@
     });
     document.write("<br>"+res);
    */
-
+    /*
     var res = arr.map((element)=>{
         // return element%2==0 ? "Even" : "Odd";
         //return element%2==0 ? true : false;
         return element%2==0 ? element : 'odd';
     });
     document.write("<br>"+res);
-  
+  */
+ /*
+   var res = arr.find((element)=>{
+        return element>=200;
+        //    return element;
+    });
+    document.write("<br>"+res);
+ */
+/*
+   var res = arr.filter((element)=>{
+        return element<=800;
+        //    return element;
+    });
+    document.write("<br>"+res);
+*/
+/*
+   var res = arr.some((element,index)=>{
+        document.write("<br>index : "+index);    
+        return element>=200;
+    });
+    document.write("<br>"+res);
+*/
+/*
+   var res = arr.every((element,index)=>{
+        document.write("<br>index : "+index);    
+        return element>=15;
+    });
+    document.write("<br>"+res);
+*/
+   var res = arr.reduce((element1,element2)=>{
+        document.write("<br>element1 : "+element1+" element2 : "+element2);    
+        return element1+element2;
+    },0);
+    document.write("<br>"+res);
+
 </script>
