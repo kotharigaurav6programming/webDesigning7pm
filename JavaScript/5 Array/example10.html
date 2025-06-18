@@ -1,0 +1,23 @@
+<script>
+    var num = parseInt(prompt("Enter no. of 2d array : "));
+    var row = parseInt(prompt("Enter rows : "));
+    var col = parseInt(prompt("Enter columns : "));
+
+    var arr = [];
+    for(i=0;i<num;i++){
+        arr[i] = [];
+        for(j=0;j<row;j++){
+            arr[i][j] = [];
+            for(k=0;k<col;k++)
+                arr[i][j][k] = parseInt(prompt("Enter Element"));
+        }
+    }
+
+    document.write("<br>Array elements are : <br>");
+    for(i=0;i<row;i++){
+        for(j=0;j<arr[i].length;j++){
+            document.write("&nbsp;&nbsp;&nbsp;"+arr[i][j]);
+        }
+        document.write("<br>");
+    }    
+</script>

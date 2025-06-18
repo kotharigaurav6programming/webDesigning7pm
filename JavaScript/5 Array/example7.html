@@ -1,0 +1,25 @@
+<script>
+    var arr = [
+        [1,2,3],
+        [3,4,5],
+        [5,6,7]
+    ];
+/*
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[0][0]);
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[0][1]);
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[0][2]);
+    document.write("<br>&nbsp;&nbsp;&nbsp;"+arr[1][0]);
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[1][1]);
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[1][2]);
+    document.write("<br>&nbsp;&nbsp;&nbsp;"+arr[2][0]);
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[2][1]);
+    document.write("&nbsp;&nbsp;&nbsp;"+arr[2][2]);
+*/
+
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<arr[i].length;j++){
+            document.write("&nbsp;&nbsp;&nbsp;"+arr[i][j]);
+        }
+        document.write("<br>");
+    }
+</script>
