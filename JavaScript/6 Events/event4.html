@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showData(){
+            var d = new Date();
+            document.getElementById("show").innerHTML = d.toLocaleTimeString();
+        }
+        setInterval(showData,1000);   
+        var data = '';
+        function myFun(){
+            var d = new Date();
+            data += d.toLocaleTimeString()+"<br>";
+            document.getElementById("demo").innerHTML = data;      
+        }
+    </script>
+</head>
+<body>
+    <p id="show"></p>
+    <button onclick="myFun()">Click</button>
+    <p id="demo"></p>
+</body>
+</html>
