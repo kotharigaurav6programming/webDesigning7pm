@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(color,elementId){
+            var paraArray = document.getElementsByTagName("p");
+            for(var i=0;i<paraArray.length;i++){
+                if(paraArray[i].id==elementId)
+                    paraArray[i].style.color=color;
+                else
+                    paraArray[i].style.color='black';
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeColor('red','para1')">Red</button>
+    <button onclick="changeColor('green','para2')">Green</button>
+    <button onclick="changeColor('blue','para3')">Blue</button>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia non aliquid reprehenderit velit eius aut consequatur omnis earum veritatis distinctio voluptatum magni, vero rem tenetur impedit deleniti sint corporis nihil nobis, officiis eos veniam voluptate vel? Rem, ab nemo.</p>
+
+    <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia non aliquid reprehenderit velit eius aut consequatur omnis earum veritatis distinctio voluptatum magni, vero rem tenetur impedit deleniti sint corporis nihil nobis, officiis eos veniam voluptate vel? Rem, ab nemo.</p>
+
+    <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia non aliquid reprehenderit velit eius aut consequatur omnis earum veritatis distinctio voluptatum magni, vero rem tenetur impedit deleniti sint corporis nihil nobis, officiis eos veniam voluptate vel? Rem, ab nemo.</p>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            float: left;
+            margin: 10px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border-style: solid;
+        }
+    </style>
+    <script>
+        function changeColor(color,element){
+            var body = document.getElementById(element);
+            body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body id="body">
+    <div>
+        <div id="box1" class="box"></div>
+        <center>
+            <button onclick="changeColor('red','box1')">Red</button>
+        </center>
+    </div>
+    <div>
+        <div id="box2" class="box"></div>
+        <center>
+            <button onclick="changeColor('green','box2')">Green</button>
+        </center>
+    </div>
+    <div>
+        <div id="box3" class="box"></div>
+        <center>
+            <button onclick="changeColor('blue','box3')">Blue</button>
+        </center>
+    </div>
+    
+    
+</body>
+</html>

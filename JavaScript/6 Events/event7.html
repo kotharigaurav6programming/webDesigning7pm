@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            float: left;
+            margin: 10px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border-style: solid;
+        }
+    </style>
+    <script>
+        function changeColor(element,currentElement){
+            var body = document.getElementById(element);
+            body.style.backgroundColor = currentElement.value;
+        }
+    </script>
+</head>
+<body id="body">
+    <div>
+        <div id="box1" class="box"></div>
+        <center>
+            <select onchange="changeColor('box1',this)">
+                <option value="">Select Color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="transparent">Transparent</option>
+            </select>
+        </center>
+    </div>
+    <div>
+        <div id="box2" class="box"></div>
+        <center>
+          <select onchange="changeColor('box2',this)">
+                <option value="">Select Color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="transparent">Transparent</option>
+            </select>
+        </center>
+    </div>
+    <div>
+        <div id="box3" class="box"></div>
+        <center>
+            <select onchange="changeColor('box3',this)">
+                <option value="">Select Color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="transparent">Transparent</option>
+            </select>
+               </center>
+    </div>
+    
+    
+</body>
+</html>
