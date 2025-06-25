@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            height:500px;
+            width: 700px;
+            border-style: solid;
+            margin: auto;
+        }
+        #upperDiv{
+            height: 300px;
+            width: 99%;
+            margin: auto;
+            /* background-color: red; */
+        }
+        #biggerImg{
+            height: 300px;
+            width: 100%;
+        }
+        #lowerDiv{
+            height: 180px;
+            width: 99%;
+            margin: auto;
+            /* background-color: green; */
+        }
+        .smallImg{
+            height:180px;
+            width: 23%;
+            margin-left: 9px;
+        }
+    </style>
+    <script>
+        function changeImage(imageElement){
+            var biggerElement = document.getElementById("biggerImg");
+            var temp = biggerElement.src;
+            biggerElement.src = imageElement.src;
+            imageElement.src = temp;
+        }
+    </script>
+</head>
+<body>
+    <div id="outer">
+        <div id="upperDiv">
+            <img src="img1.jpg" id="biggerImg" alt="">
+        </div>
+        <hr color="black">
+        <div id="lowerDiv">
+            <img src="img2.jpg" class="smallImg" onclick="changeImage(this)" alt="">
+            <img src="img3.jpg" class="smallImg" onclick="changeImage(this)" alt="">
+            <img src="img4.jpg" class="smallImg" onclick="changeImage(this)" alt="">
+            <img src="img5.jpg" class="smallImg" onclick="changeImage(this)" alt="">
+        </div>
+    </div>
+</body>
+</html>

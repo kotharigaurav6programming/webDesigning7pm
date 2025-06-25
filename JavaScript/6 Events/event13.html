@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name = "glowbulb.jpg";
+
+        function toggle(){
+            if(document.getElementById("message").innerText=="OFF")
+                document.getElementById("message").innerHTML = "ON";
+            else
+                document.getElementById("message").innerHTML = "OFF";
+            
+            var demo = document.getElementById("image");
+            var temp = demo.src;
+            demo.src = name;
+            name = temp;
+        }
+    </script>
+</head>
+<body>  
+    <img src="bulb.jpg" id="image" style="height: 300px;" alt="">
+    <br>
+    <button onclick="toggle()">
+        <span id="message"></span>
+    </button>
+    <script>
+      document.getElementById("message").innerHTML ="ON";
+    </script>
+</body>
+</html>
