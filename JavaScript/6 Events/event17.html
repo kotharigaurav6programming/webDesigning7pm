@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(currentElement){
+            alert("You Select : "+currentElement.value)
+        }
+    </script>
+</head>
+<body>  
+    <h1>Select Any One</h1>
+    <input onclick="show(this)" type="radio" value="Tea" name="demo" id="tea">Tea <br>
+    <input onclick="show(this)" type="radio" value="Coffee" name="demo" id="coffee">Coffee <br>
+    <input onclick="show(this)" type="radio" value="Juice" name="demo" id="juice">Juice <br>
+    <input onclick="show(this)" type="radio" value="Chocolate" name="demo" id="chocolate">Chocolate <br>
+    <input onclick="alert(this.value)" type="radio" value="Fruits" name="demo" id="fruits">Fruits <br>
+    
+</body>
+</html>

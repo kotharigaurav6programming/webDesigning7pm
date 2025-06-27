@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: auto;
+            background-color: crimson;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            background-color: green;
+            padding: 10px;
+        }
+        p{
+            margin: 30px;
+            background-color: orange;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function over(){
+            document.getElementById("overCount").innerHTML++;
+        }
+        function move(){
+            document.getElementById("moveCount").innerHTML++;
+        }
+        function enter(){
+            document.getElementById("enterCount").innerHTML++;
+        }
+
+</script>
+</head>
+<body>  
+<div id="demo1" onmouseover = "over()">
+    <h1>
+        Mouse Over : <span id="overCount">0</span>
+    </h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nisi, harum mollitia atque distinctio quibusdam accusamus rem aliquam excepturi beatae libero? Dolores quas earum blanditiis nihil eveniet v.
+    </p>
+</div>
+<div id="demo2" onmouseenter = "enter()">
+    <h1>
+        <center>Mouse Enter : <span id="enterCount">0</span></center>
+    </h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nisi, harum mollitia atque distinctio quibusdam accusamus rem aliquam excepturi beatae libero? Dolores quas earum blanditiis nihil eveniet v.
+    </p>
+</div>
+<div id="demo3" onmousemove = "move()">
+    <h1>
+        <center>Mouse Move : <span id="moveCount">0</span></center>
+    </h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nisi, harum mollitia atque distinctio quibusdam accusamus rem aliquam excepturi beatae libero? Dolores quas earum blanditiis nihil eveniet v.
+    </p>
+</div>
+
+</body>
+</html>

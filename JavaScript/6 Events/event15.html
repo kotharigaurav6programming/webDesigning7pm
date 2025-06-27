@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function move(){
+            var demo1 = document.getElementById("demo1");
+            demo1.style.textTransform = "uppercase";
+        }
+        function over(){
+            var demo2 = document.getElementById("demo2");
+            demo2.style.textTransform = "capitalize";
+        }
+        function enter(){
+            var demo3 = document.getElementById("demo3");
+            demo3.style.textDecoration = "line-through";
+        }
+        function leave(){
+            var demo4 = document.getElementById("demo4");
+            demo4.style.fontSize = "30px";
+        }
+        function down(){
+            var demo5 = document.getElementById("demo5");
+            demo5.style.fontFamily = "cursive";
+        }
+        function up(){
+            var demo6 = document.getElementById("demo6");
+            demo6.style.backgroundColor = "crimson";
+        }
+</script>
+</head>
+<body>  
+ <span id="demo1" onmousemove="move()">Lorem ipsum dolor sit amet.</span><br>
+ <span id="demo2" onmouseover="over()">Lorem ipsum dolor sit amet.</span><br>
+ <span id="demo3" onmouseenter="enter()">Lorem ipsum dolor sit amet.</span><br>
+ <span id="demo4" onmouseleave="leave()">Lorem ipsum dolor sit amet.</span><br>
+ <span id="demo5" onmousedown="down()">Lorem ipsum dolor sit amet.</span><br>
+ <span id="demo6" onmouseup="up()">Lorem ipsum dolor sit amet.</span><br>
+
+</body>
+</html>
