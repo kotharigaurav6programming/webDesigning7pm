@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var res = '';
+            var elementsArray = document.getElementsByTagName("input");
+            for(var i=0;i<elementsArray.length;i++){
+                if(elementsArray[i].checked)
+                    res += elementsArray[i].value+"\n";
+            }
+            alert(res=='' ? "You Haven't Select Any Item" : "You select : \n"+res);
+        }
+    </script>
+</head>
+<body>  
+    <h1>Select Option(s)</h1>
+    <input type="checkbox" value="Tea" name="demo" id="tea">Tea <br>
+    <input type="checkbox" value="Coffee" name="demo" id="coffee">Coffee <br>
+    <input type="checkbox" value="Juice" name="demo" id="juice">Juice <br>
+    <input type="checkbox" value="Chocolate" name="demo" id="chocolate">Chocolate <br>
+    <input type="checkbox" value="Fruits" name="demo" id="fruits">Fruits <br>
+    <button onclick="show()">Click To Select</button>
+
+</body>
+</html>

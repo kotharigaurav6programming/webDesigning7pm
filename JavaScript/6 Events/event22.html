@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate(){
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = num1+num2;
+            document.getElementById("btnRes").value = num1+num2;
+           document.getElementById("res").innerHTML = "Result : "+(num1+num2); 
+        } 
+    </script>
+</head>
+<body>  
+    <h2>Example | How to take values from fields </h2>
+    <input type="text" id="num1" placeholder="Enter first number"> <br>
+    <input type="text" id="num2" placeholder="Enter second number"> <br>
+    <input type="text" id="result" readonly placeholder="Result"> <br>
+    <input id="btnRes" onclick="calculate()" type="submit" value="Submit"> <br>
+    <span id="res">Result will show here..!!</span>
+</body>
+</html>

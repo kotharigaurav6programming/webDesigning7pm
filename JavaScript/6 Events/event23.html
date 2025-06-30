@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate(currentElement){
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+           
+            var data;
+            if(currentElement.value=='+')
+                data = num1+num2; 
+            if(currentElement.value=='-')
+                data = num1-num2; 
+            if(currentElement.value=='*')
+                data = num1*num2; 
+            if(currentElement.value=='/')
+                data = num1/num2; 
+            if(currentElement.value=='%')
+                data = num1%num2; 
+            
+            currentElement.value = data;
+            document.getElementById("result").value = data;
+            document.getElementById("res").innerHTML = "Result : "+data; 
+        } 
+    </script>
+</head>
+<body>  
+    <h2>Example | How to take values from fields </h2>
+    <input type="text" id="num1" placeholder="Enter first number"> <br>
+    <input type="text" id="num2" placeholder="Enter second number"> <br>
+    <input type="text" id="result" readonly placeholder="Result"> <br>
+    <input onclick="calculate(this)" type="submit" value="+"> 
+    <input onclick="calculate(this)" type="submit" value="-"> 
+    <input onclick="calculate(this)" type="submit" value="*"> 
+    <input onclick="calculate(this)" type="submit" value="/"> 
+    <input onclick="calculate(this)" type="submit" value="%"> <br>
+
+    <span id="res">Result will show here..!!</span>
+</body>
+</html>
