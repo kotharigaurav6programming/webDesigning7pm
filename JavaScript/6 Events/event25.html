@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var usernameStatus = validateUsername();
+            var emailStatus = validateEmail();
+            var genderStatus = validateGender();
+            var subjectStatus = validateSubject();
+            
+            var edisplay = document.getElementById("edisplay");
+            var gdisplay = document.getElementById("gdisplay");
+            var sdisplay = document.getElementById("sdisplay");
+
+            if(usernameStatus==false){
+                if(emailStatus==false)
+                    edisplay.innerHTML="*";
+                if(genderStatus==false)
+                    gdisplay.innerHTML="*";
+                if(subjectStatus==false)
+                    sdisplay.innerHTML="*";
+                return false;
+            }
+            else if(emailStatus==false)
+            { 
+                if(genderStatus==false)
+                    gdisplay.innerHTML="*";
+                if(subjectStatus==false)
+                    sdisplay.innerHTML="*";
+                return false;
+            }
+            else if(genderStatus==false)
+            { 
+                if(subjectStatus==false)
+                    sdisplay.innerHTML="*";
+                return false;
+            }
+            else if(subjectStatus==false)
+            { 
+                return false;
+            }
+
+        }
+
+        function validateUsername(){
+            var username = document.getElementById("username");
+            var udisplay = document.getElementById("udisplay");
+
+            if(username.value.trim()==''){
+                udisplay.innerHTML="Username Required";
+                return false;
+            }
+            else{
+                udisplay.innerHTML="";
+                return true;
+            }
+        } 
+        function validateEmail(){
+            var email = document.getElementById("email");
+            var edisplay = document.getElementById("edisplay");
+
+            if(email.value.trim()==''){
+                edisplay.innerHTML="Email Required";
+                return false;
+            }
+            else{
+                edisplay.innerHTML="";
+                return true;
+            }
+        } 
+        function validateGender(){
+            var male = document.getElementById("male");
+            var female = document.getElementById("female");
+            var gdisplay = document.getElementById("gdisplay");
+
+            if(male.checked==false && female.checked==false){
+                gdisplay.innerHTML="Gender Required";
+                return false;
+            }
+            else{
+                gdisplay.innerHTML="";
+                return true;
+            }
+        } 
+        function validateSubject(){
+            var subject = document.getElementById("subject");
+            var sdisplay = document.getElementById("sdisplay");
+
+            if(subject.selectedIndex==0){
+                sdisplay.innerHTML="Subject Required";
+                return false;
+            }
+            else{
+                sdisplay.innerHTML="";
+                return true;
+            }
+        } 
+</script>
+</head>
+<body>  
+    <h2>Validation for Empty Fields</h2>
+    <form action="welcome.html" onsubmit="return validate()">
+        Username : <br>
+        <input onkeyup="validateUsername()" type="text" id="username" name="username" placeholder="Enter Username"> 
+        <span id="udisplay" style="color:red">*</span>
+        <br>
+        Email : <br>
+        <input onkeyup="validateEmail()" type="email" id="email" name="email" placeholder="Enter Email">
+        <span id="edisplay" style="color:red">*</span><br>
+        
+        Gender : <br>
+        <input onclick="validateGender()" type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input onclick="validateGender()" type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <span id="gdisplay" style="color:red">*</span><br>
+
+        Select Subject : <br> 
+        <select onchange="validateSubject()" name="subject" id="subject">
+            <option value="">Select Subject</option>
+            <option value="C Language">C Language</option>
+            <option value="C++ Language">C++ Language</option>
+            <option value="C# Language">C# Language</option>
+        </select> 
+        <span id="sdisplay" style="color:red">*</span>
+        <br><br>
+        <input type="submit" value="Submit" >
+    </form>
+</body>
+</html>
