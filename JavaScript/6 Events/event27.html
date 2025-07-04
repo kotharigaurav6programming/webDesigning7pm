@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate(qty,price,field){
+            var qty = parseInt(document.getElementById(qty).value);
+            var price = parseFloat(document.getElementById(price).value);
+            var amt = document.getElementsByClassName("amt");
+            (field==1) ? (amt[field-1].value = qty*price) : ((field==2) ? (amt[field-1].value = qty*price):"")
+
+            var gstElement = document.getElementById("gst");
+            calculateGST(gstElement);
+        }
+        function calculateGST(gstElement){
+            var gst = parseFloat(document.getElementById("gst").value);
+            var amt = document.getElementsByClassName("amt");
+            var sum = 0;
+            for(var i=0;i<amt.length-1;i++){
+                sum += parseFloat(amt[i].value);
+            }
+            amt[amt.length-1].value = gst*sum/100 + sum;
+        }
+    </script>
+</head>
+<body>  
+    <center><h2>Generate Bill Example</h2></center>
+    <table align="center" border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>S.No</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price <br> (Per Piece)</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Soap</td>
+            <td>
+                <input type="number" min="0" placeholder="Enter Quantity" id="q1" onkeyup="calculate('q1','p1',1)">
+            </td>
+            <td>
+                <input type="number" min="0" placeholder="Enter Price(Per Piece)" id="p1" onkeyup="calculate('q1','p1',1)">
+            </td>
+            <td>
+                <input type="number" readonly placeholder="Amount" class="amt">
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Fairness Cream</td>
+            <td>
+                <input type="number" min="0" placeholder="Enter Quantity" id="q2" onkeyup="calculate('q2','p2',2)">
+            </td>
+            <td>
+                <input type="number" min="0" placeholder="Enter Price(Per Piece)" id="p2" onkeyup="calculate('q2','p2',2)">
+            </td>
+            <td>
+                <input type="number" readonly placeholder="Amount" class="amt">
+            </td>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>GST</td>
+            <td>
+                <input type="number" onkeyup="calculateGST(this)" min="0" placeholder="Enter GST" id="gst">
+            </td>
+            <td>
+                <h2>Total</h2>
+            </td>
+            <td>
+                <input type="number" readonly placeholder="Total Amount" class="amt">
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>
