@@ -1,0 +1,16 @@
+<!-- example showing the concept of  prototype  -->
+<script>
+    function Employee(){
+        this.name = "Andrew Anderson";
+        this.address = "Indore Madhya Pradesh";
+        this.age = 56;
+    }
+    Employee.prototype.salary = 23000;
+
+    const emp = new Employee();
+    document.write("Name : "+emp.name);
+    document.write("<br>Address : "+emp.address);
+    document.write("<br>Age : "+emp.age);
+    document.write("<br>Salary : "+emp.salary);
+    
+</script>

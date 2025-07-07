@@ -1,0 +1,14 @@
+<!-- example showing the concept of  prototype  -->
+<script>
+    function Employee(){
+        this.num = 100;
+    }
+    const emp = new Employee();
+    document.write("emp num : ",emp.num);
+    emp.num+=200;
+    document.write("<br>emp num : ",emp.num);
+    
+    const emp1 = new Employee();
+    document.write("<br>emp1 num : ",emp1.num);
+    
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var email = document.getElementById("email").value;
+            alert("Hello "+email);
+        }
+        function foc(){
+            var email = document.getElementById("email");
+            email.style.backgroundColor="wheat";
+            email.style.fontFamily="cursive";
+            email.style.color="goldenrod";
+        }
+        function blurDemo(){
+            var email = document.getElementById("email");
+            email.style.backgroundColor="crimson";
+            email.style.fontFamily="monospace";
+            email.style.color="white";
+        }
+
+</script>
+</head>
+<body onload="alert('Welcome User')">   
+    <form action="" onsubmit="return show()">
+        <input type="email" onfocus="foc()" onblur="blurDemo()" required id="email" placeholder="Enter Email">
+        <button>Click to See Entered Email</button>
+    </form>
+</body>
+</html>

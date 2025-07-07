@@ -1,0 +1,18 @@
+<!-- var keyword (ES5) : function scopic  -->
+<script>
+    var a = 100;
+    document.write("value of a : "+a+"<br>");
+    a = 200;
+    document.write("value of a : "+a+"<br>");
+    {
+        var a = 300;
+        document.write("value of a inside block : "+a+"<br>");
+    }
+    document.write("value of a ouside block : "+a+"<br>");
+    function show(){
+        var a = 400;
+        document.write("value of a inside function : "+a+"<br>");
+    }
+    show();
+    document.write("value of a outside function: "+a+"<br>");    
+</script>
