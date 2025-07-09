@@ -1,0 +1,8 @@
+Object in Javascript
+---------------------
+There are two ways to create object in JavaScript : 
+    1. By Object Literal
+       var object = {}; 
+
+    2. By New Keyword (Object Constructor)
+       var object = new Object(); 

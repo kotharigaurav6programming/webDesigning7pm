@@ -1,0 +1,24 @@
+<!-- example showing the concept of  prototype  -->
+<script>
+    var age = parseInt(prompt("Enter Age"));
+    function Employee(name){
+        this.setDetails = (address)=>{
+            this.name = name;
+            this.address = address;
+            this.age = age;
+        }
+        this.setAddress = (address)=>{
+            this.address = address;
+        }
+        this.showDetails = ()=>{
+            document.write("Name : "+this.name);
+            document.write("<br>Address : "+this.address);
+            document.write("<br>Age : "+this.age);
+        }
+    }
+    const emp = new Employee("Peter Parker");
+    emp.setDetails("Indore Madhya Pradesh");
+    emp.setAddress("USA");
+
+    emp.showDetails();
+</script>

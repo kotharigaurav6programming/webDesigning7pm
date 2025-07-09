@@ -1,0 +1,23 @@
+<script>
+    // var obj = {
+    //     name : "Mathew",
+    //     age : 67
+    // }
+    // obj.salary = 90000;
+
+    var obj = new Object();
+        obj.name = "Mathew";
+        obj.age = 67;
+        obj.salary = 90000;
+
+    document.write("<br>Name : "+obj.name);
+    document.write("<br>Age : "+obj.age);
+//    document.write("<br>Salary : "+obj.salary);
+    document.write("<br>Salary : "+(obj.salary ? obj.salary : "Not Found"));
+    document.write("<br>Salary : "+(obj.salary ?? "Not Found"));
+
+    delete obj.salary;
+    document.write("<br>Salary : "+(obj.salary ? obj.salary : "Not Found"));
+    document.write("<br>Salary : "+(obj.salary ?? "Not Found"));
+    
+</script>

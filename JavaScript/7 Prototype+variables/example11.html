@@ -1,0 +1,16 @@
+<!-- example showing the concept of  prototype  -->
+<script>
+    function Employee(){
+        this.a=5;
+        this.b=6;
+        document.write("Before swapping : <br>a : "+this.a);
+        document.write("<br>b : "+this.b);
+        temp = this.a;
+        this.a=this.b;
+        this.b=temp;
+        document.write("<br>After swapping : <br>a : "+this.a);
+        document.write("<br>b : "+this.b);
+    }
+    const emp = new Employee();
+    document.write("<br>"+emp.constructor.name);
+</script>
