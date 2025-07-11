@@ -1,0 +1,39 @@
+<script>
+    var stud1 = {
+         sid : 'STUD1',
+         name : 'Peter Parker',
+         address : 'Indore'   
+    }
+    var stud2 = {
+         sid : 'STUD2',
+         name : 'Andrew Anderson',
+         address : 'Bhopal'   
+    }
+    var stud3 = {
+         sid : 'STUD3',
+         name : 'Mathew Math',
+         address : 'Jabalpur'   
+    }
+    
+    var studArray = [stud1,stud2,stud3];
+    var table = `<table border='1' cellspacing='0' cellpadding='10'>
+                    <tr>
+                       <th>S.No</th>
+                       <th>Sid</th>
+                       <th>Name</th>
+                       <th>Address</th>     
+                    </tr>`
+
+    studArray.forEach((stud,index)=>{
+        table+= `<tr>
+                    <td>${index+1}</td>
+                    <td>${stud.sid}</td>        
+                    <td>${stud.name}</td>        
+                    <td>${stud.address}</td>        
+                </tr>`        
+    });
+    table+=`</table>`;
+
+    document.write(table);
+</script>
+

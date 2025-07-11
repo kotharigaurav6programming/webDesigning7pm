@@ -1,0 +1,26 @@
+<script>
+    var stud1 = {
+         sid : 'STUD1',
+         name : 'Peter Parker',
+         address : 'Indore'   
+    }
+    var stud2 = {
+         sid : 'STUD2',
+         name : 'Andrew Anderson',
+         address : 'Bhopal'   
+    }
+    var stud3 = {
+         sid : 'STUD3',
+         name : 'Mathew Math',
+         address : 'Jabalpur'   
+    }
+    
+    var studArray = [stud1,stud2,stud3];
+    for(var i=0;i<studArray.length;i++){
+        document.write("<br><br><b>"+(i+1)+" student details</b></br>");
+        document.write("<br>Sid : "+studArray[i].sid);
+        document.write("<br>Name : "+studArray[i].name);
+        document.write("<br>Address : "+studArray[i].address);
+    }    
+
+</script>

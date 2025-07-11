@@ -1,0 +1,18 @@
+<script>
+    var obj = {
+        name : "Andrew Anderson",
+        isAdmin : true,
+        subjects : ['C','C++'],
+        address : {
+            state:"indore",
+            country:"India",
+            toString(){
+                return this.state+' '+this.country;
+            }
+        },
+        toString(){
+            return this.name+' '+this.isAdmin+' '+this.subjects+' '+this.address;
+        }
+    }
+    document.write("<br>obj : "+obj);
+</script>
