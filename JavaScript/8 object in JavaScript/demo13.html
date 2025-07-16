@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showTable() {
+            var studArray = [
+                {
+                sid: 'STUD1',
+                name: 'Andrew Anderson',
+                address: {
+                    countryName : {
+                        name : "India",
+                        stateName : {
+                            name : "Madhya Pradesh",
+                            cityName : {
+                                name : "Indore",
+                                street : {
+                                    name : "Vijaynagar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },{
+                sid: 'STUD2',
+                name: 'Simon Sim',
+                address: {
+                    countryName : {
+                        name : "India",
+                        stateName : {
+                            name : "Madhya Pradesh",
+                            cityName : {
+                                name : "Indore",
+                                street : {
+                                    name : "Vijaynagar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },{
+                sid: 'STUD3',
+                name: 'Jack Jackson',
+                address: {
+                    countryName : {
+                        name : "India",
+                        stateName : {
+                            name : "Madhya Pradesh",
+                            cityName : {
+                                name : "Indore",
+                                street : {
+                                    name : "Vijaynagar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },{
+                sid: 'STUD4',
+                name: 'Peter Parker',
+                address: {
+                    countryName : {
+                        name : "India",
+                        stateName : {
+                            name : "Madhya Pradesh",
+                            cityName : {
+                                name : "Indore",
+                                street : {
+                                    name : "Vijaynagar"
+                                }
+                            }
+                        }
+                    }
+                }
+            },{
+                sid: 'STUD5',
+                name: 'Mathew Math',
+                address: {
+                    countryName : {
+                        name : "India",
+                        stateName : {
+                            name : "Madhya Pradesh",
+                            cityName : {
+                                name : "Indore",
+                                street : {
+                                    name : "Vijaynagar"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            ];
+            var table = `<table border='1' cellspacing='0' cellpadding='10'>
+                        <tr>
+                        <th>S.No</th>
+                        <th>Sid</th>
+                        <th>Name</th>
+                        <th>CountryName</th>     
+                        <th>StateName</th>     
+                        <th>CityName</th>     
+                        <th>StreetName</th>     
+                        </tr>`
+
+            for(var index in studArray){
+                table+=`<tr><td>${parseInt(index)+1}</td>`
+                for(var key in studArray[index]){
+                   if(typeof studArray[index][key]==="object"){
+                       for(var innerkey in studArray[index][key]){
+                        if(typeof studArray[index][key][innerkey]==="object"){
+                            for(var subkey in studArray[index][key][innerkey]){
+                                if(typeof studArray[index][key][innerkey][subkey]==="object"){
+                                    for(var innersubkey in studArray[index][key][innerkey][subkey]){
+                                        if(typeof studArray[index][key][innerkey][subkey][innersubkey]==="object"){
+                                           for(var subinnerkey in studArray[index][key][innerkey][subkey][innersubkey]){
+                                            if(typeof studArray[index][key][innerkey][subkey][innersubkey][subinnerkey]==="object"){
+                                                for(var insidekey in studArray[index][key][innerkey][subkey][innersubkey][subinnerkey]){
+                                                    if(typeof studArray[index][key][innerkey][subkey][innersubkey][subinnerkey][insidekey]==="object"){
+                                                        // .........
+                                                    }else
+                                                     table+=`<td>${studArray[index][key][innerkey][subkey][innersubkey][subinnerkey][insidekey]}</td>`   
+                                                }
+                                            }else
+                                             table+=`<td>${studArray[index][key][innerkey][subkey][innersubkey][subinnerkey]}</td>`   
+                                           } 
+                                        }else
+                                             table+=`<td>${studArray[index][key][innerkey][subkey][innersubkey]}</td>`
+                                    }
+                                }else
+                                    table+=`<td>${studArray[index][key][innerkey][subkey]}</td>`
+                            }
+                        }else
+                          table+=`<td>${studArray[index][key][innerkey]}</td>`
+                       } 
+                    }
+                   else
+                        table+=`<td>${studArray[index][key]}</td>`
+                }
+                table+=`</tr>`;
+            }            
+
+            table += `</table>`;
+
+            document.getElementById("data").innerHTML=table;
+           
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="showTable()">Click to Show</button>
+    <p id="data"></p>
+</body>
+
+</html>
