@@ -1,0 +1,86 @@
+XML vs JSON
+----   -----
+
+XML = Extensible Markup language
+
+1. It is simply a markup language (Tag based language)
+2. It is heavy weight (limitation)
+3. Data transfer Format
+4. Its a language independent
+5. It does not support the concept of array(limitation)
+
+<movies>
+    <movie>
+        <movie-name>Adventure</movie-name>
+        <movie-comment>3 Rotten Tomatoes</movie-comment> 
+        <movie-rating>2.4</movie-rating>
+        <movie-actor>John Jackson</movie-actor>
+    </movie>
+    <movie>
+        <movie-name>Adventure</movie-name>
+        <movie-comment>3 Rotten Tomatoes</movie-comment> 
+        <movie-rating>2.4</movie-rating>
+        <movie-actor>John Jackson</movie-actor>
+    </movie>
+    <movie>
+        <movie-name>Adventure</movie-name>
+        <movie-comment>3 Rotten Tomatoes</movie-comment> 
+        <movie-rating>2.4</movie-rating>
+        <movie-actor>John Jackson</movie-actor>
+    </movie>
+</movies>
+
+JSON = JavaScript Object Notation
+
+1. It consists of key value pair.
+    {key : value}
+
+2. It is light weight (advantage)
+3. Data transfer Format
+4. Its a language independent
+5. It supports the concept of array(advantage)
+
+[
+    {
+        "movie_name":"Adventure",
+        "movie_comment" : "3 Rotten Tomatoes",
+        "movie_rating" : 2.4,
+        "movie_actor" : "John Jackson"
+    },
+    {
+        "movie_name":"Adventure",
+        "movie_comment" : "3 Rotten Tomatoes",
+        "movie_rating" : 2.4,
+        "movie_actor" : "John Jackson"
+    },
+    {
+        "movie_name":"Adventure",
+        "movie_comment" : "3 Rotten Tomatoes",
+        "movie_rating" : 2.4,
+        "movie_actor" : "John Jackson"
+    },
+    {
+        "movie_name":"Adventure",
+        "movie_comment" : "3 Rotten Tomatoes",
+        "movie_rating" : 2.4,
+        "movie_actor" : "John Jackson"
+    },
+    {
+        "movie_name":"Adventure",
+        "movie_comment" : "3 Rotten Tomatoes",
+        "movie_rating" : 2.4,
+        "movie_actor" : "John Jackson"
+    }
+]
+
+
+
+var obj = {
+    name : "andrew anderson",
+    age : 67
+}
+
+var json = {
+    "name" : "Andrew Anderson",
+    "age" : 67
+}

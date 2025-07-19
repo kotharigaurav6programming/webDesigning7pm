@@ -1,0 +1,20 @@
+<script>
+    // json string
+var jsonString = `{
+    "name" : "peter",
+    "address" : "indore",
+    "age" : 45
+}`
+document.write("<br><br>typeof jsonString : "+typeof jsonString);
+
+var obj = JSON.parse(jsonString);
+document.write("<br>Name : "+obj.name);
+document.write("<br>Address : "+obj.address);
+document.write("<br>Age : "+obj.age);
+
+document.write("<br>typeof obj : "+typeof obj);
+document.write("<br>obj : "+obj);
+document.write("<br>typeof JSON.stringify(obj) : "+typeof JSON.stringify(obj));
+document.write("<br>JSON.stringify(obj) : "+JSON.stringify(obj));
+
+</script>
