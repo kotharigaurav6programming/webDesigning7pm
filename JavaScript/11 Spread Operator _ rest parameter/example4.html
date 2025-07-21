@@ -1,0 +1,22 @@
+<!-- Example showing the concept of Spread Operator -->
+<script>
+    var obj1 = {
+        name : "Andrew Anderson",
+        age : 56,
+        address : "Indore"
+    }    
+    var obj2 = {
+        pincode : 452010,
+        state : "MP",
+        city : "Indore"
+    }    
+    
+    var obj3 = {...obj1,...obj2};
+    document.write("name : "+obj3.name);
+    document.write("<br>age : "+obj3.age);
+    document.write("<br>address : "+obj3.address);
+    document.write("<br>pincode : "+obj3.pincode);
+    document.write("<br>state : "+obj3.state);
+    document.write("<br>city : "+obj3.city);
+    
+</script>

@@ -1,0 +1,21 @@
+<!-- Example showing the concept of object destructuring -->
+<script>
+    var obj1 = {
+        name : "Andrew Anderson",
+        age : 56,
+        address : "Indore",
+        state : "MP",
+        city : "Indore"
+    }    
+    
+    var {name:FullName,age:Age,address,salary=2222,state,city} = obj1;
+
+    document.write("name : "+name);
+    document.write("<br>name : "+FullName);
+    document.write("<br>age : "+Age);
+    document.write("<br>address : "+address);
+    document.write("<br>Salary : "+salary);
+    document.write("<br>state : "+state);
+    document.write("<br>city : "+city);
+    
+</script>

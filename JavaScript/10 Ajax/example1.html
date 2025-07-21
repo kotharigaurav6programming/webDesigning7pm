@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showData(){
+            var method = 'GET';
+            var url = 'https://jsonplaceholder.typicode.com/posts';
+            var async_status = true;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open(method,url,async_status);
+            xhttp.send();
+
+            xhttp.onreadystatechange = function(){
+                if(xhttp.readyState==4 && xhttp.status==200){
+                    var arr = JSON.parse(xhttp.responseText);
+                    var table = `<table border='1' cellpadding='10' cellspacing='0'><tr><th>S.No</th><th>UserId</th><th>Id</th><th>Title</th><th>Body</th></tr>`;
+
+                    for(var index in arr){
+                        table += `<tr><td>${parseInt(index)+1}</td>`;
+                        for(var key in arr[index]){
+                            table+=`<td>${arr[index][key]}</td>`;
+                        }
+                        table += `</tr>`;
+                    }    
+                    table += `</table>`;
+
+                    document.getElementById("show").innerHTML = table;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showData()">Click To Get Data</button>
+    <p id="show"></p>
+</body>
+</html>

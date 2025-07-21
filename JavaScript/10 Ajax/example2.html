@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showData(){
+            var obj = {
+                'userId' : 'STUD101',
+                'id' : '10001',
+                'title' : 'Its a dummy Title',
+                'body':'Its a dummy Body'
+            }
+            var method = 'POST';
+            var url = 'https://jsonplaceholder.typicode.com/posts';
+            var async_status = true;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open(method,url,async_status);
+            xhttp.setRequestHeader('content-type','application/json');
+            xhttp.send(JSON.stringify(obj));
+
+            xhttp.onreadystatechange = function(){
+                if(xhttp.readyState==4 && xhttp.status==201){
+                    document.getElementById("show").innerHTML = xhttp.responseText;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showData()">Click To show Added Data</button>
+    <p id="show"></p>
+</body>
+</html>
