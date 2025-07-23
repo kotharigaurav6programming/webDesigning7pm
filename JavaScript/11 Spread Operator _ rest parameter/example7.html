@@ -1,0 +1,30 @@
+<!-- Example showing the concept of object destructuring -->
+<script>
+    function showData(){
+        return {
+            name : "Andrew Anderson",
+            age : 56,
+            address : {
+                state : "MP",
+                city : "Indore",
+                toString(){
+                    return this.state+" "+this.city
+                }
+            },
+            state : "MP",
+            city : "Indore"
+        }    
+    }    
+    var {name:FullName,age:Age,address,salary=2222,state,city} = showData();
+
+    document.write("name : "+name);
+    document.write("<br>name : "+FullName);
+    document.write("<br>age : "+Age);
+    document.write("<br>address : "+address);
+    document.write("<br>address state : "+address.state);
+    document.write("<br>address city : "+address.city);
+    document.write("<br>Salary : "+salary);
+    document.write("<br>state : "+state);
+    document.write("<br>city : "+city);
+    
+</script>
