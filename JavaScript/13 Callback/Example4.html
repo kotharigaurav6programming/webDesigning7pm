@@ -1,0 +1,22 @@
+<script>
+    // Asynchronous callback
+    document.write("<br>Before execution");
+    var myFun1 = function(){
+        document.write("<br>Its callback 1");
+    }
+
+    var myFun2 = ()=>{
+        document.write("<br>Its callback 2");
+    }
+
+    function show(callback1,callback2){
+        document.write("<br>statement 1");
+            // setTimeout(callback1,5000);
+            setTimeout(callback1); // zero time delay
+            setTimeout(callback1,0); // zero time delay
+        document.write("<br>statement 2");
+            setTimeout(callback2,3000);
+    }
+    show(myFun1,myFun2);
+    document.write("<br>After execution");
+</script>

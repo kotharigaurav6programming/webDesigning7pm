@@ -1,0 +1,22 @@
+<script>
+    //  Asynchronous 
+    console.log("Before execution");
+        function gotoroom(){
+            console.log("gotoroom");
+            
+        }
+        function removegarbage(a,b,name){
+            console.log(name+" removegarbage : "+(a+b));
+            
+        }
+        function wonprize(){
+            console.log("wonprize");
+        }
+        setTimeout(gotoroom,5000);
+        setTimeout(removegarbage,3000,100,200,"andrew anderson");
+        // setInterval(wonprize,2000);
+        setInterval(()=>{
+            wonprize();
+        },2000);
+    console.log("After execution");    
+</script>

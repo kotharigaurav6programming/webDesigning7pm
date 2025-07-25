@@ -1,0 +1,27 @@
+<script>
+    // var a = 100;
+    // function show(a){
+    //     document.write("value of a : "+a);
+    //     document.write("<br>typeof  a : "+typeof a);
+    // }
+    // show(a);
+
+    // callback : If you pass any function as an argument, then in that case that function is known as callback
+
+    function show(callback){
+        document.write("value of callback : "+callback);
+        document.write("<br>typeof  callback : "+typeof callback);
+        callback();
+    }
+    show(function demo(){
+        document.write("<br>Hello It's Demo");
+    });
+</script>
+
+
+
+<!-- var callback = function demo(){
+        document.write("Hello It's Demo");
+    }
+
+callback(); -->

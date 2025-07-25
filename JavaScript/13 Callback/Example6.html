@@ -1,0 +1,20 @@
+<script>
+    var YOB = parseInt(prompt("Enter Year of Birth : ")); 
+    var myFun = (year)=>{
+        document.write("Hello Andrew, You are "+year+" years old");
+    }
+    function show(callback){
+        var year = new Date().getFullYear()-YOB;
+        callback(year);
+    }
+    show(myFun);
+</script>
+
+
+<!-- var callback = (message)=>{
+        document.write("Hello Andrew, Your Message is : "+message);
+    }
+    
+    var msg = "How are you ? ";
+        callback(msg);
+     -->
