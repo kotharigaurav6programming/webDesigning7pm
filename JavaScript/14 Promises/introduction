@@ -1,0 +1,29 @@
+Promise
+
+1. Promise simply reduces the complexity of callback hell
+2. Promise itself use inbuilt callback
+3. Promise is built in object.
+4. We can create custom promise object
+5. Promise have 3 state:
+    a. pending
+    b. fullfilled
+    c. rejected
+6. Inbuilt callbacks of Promise are : 
+    resolve and reject 
+7. Promise object contains resolve with a value or reject with a    
+   reason
+8. We deals with two methods :
+    a. then : handles resolve value
+    b. catch : handles reject reason  
+
+9. Here then and catch also returns promise object with resolve value  
+10. syntax : 
+
+    new Promise(executor);
+
+    where executor is callback, which consists of two inbuilt callback (resolve and reject) as an arguments.
+
+    new Promise((resolve,reject)=>{
+        // return resolve();
+        // return reject();
+    });

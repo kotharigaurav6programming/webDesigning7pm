@@ -1,0 +1,39 @@
+<script>
+    /*
+    new Promise((resolve,reject)=>{
+        resolve("resolve value");
+    }).then((msg)=>{
+        console.log(msg);
+    });
+    */
+
+    /*
+    new Promise((resolve,reject)=>{
+        //resolve("resolve value");
+        reject("Invalid URL");
+    }).then((msg)=>{
+        console.log(msg);
+    },(error)=>{
+        console.log(error);
+    });
+    */
+    /*
+   new Promise((resolve,reject)=>{
+        reject("Invalid value");
+    }).catch((msg)=>{
+        console.log(msg);
+    });
+    */
+
+    new Promise((resolve,reject)=>{
+        if(!true)
+            resolve("resolve value");
+        else
+            reject("Invalid value");
+    }).then((msg)=>{
+        console.log("then : ",msg);
+    }).catch((msg)=>{
+        console.log("catch : ",msg);
+    });
+   
+</script>

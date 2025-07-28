@@ -1,0 +1,21 @@
+<script>
+    // concept of callback hell | pyramid of doom
+    var num=10;
+    console.log(num);
+    function myFun(num,callback){
+        console.log(num);
+        callback(num+2,(num,callback)=>{
+            console.log(num);
+            callback(num+2,()=>{
+                console.log("End of program");
+            });
+        });
+    }
+    myFun(num+2,(num,callback)=>{
+        console.log(num);
+        callback(num+2,(num,callback)=>{
+            console.log(num);
+            callback();
+        });
+    });
+</script>
