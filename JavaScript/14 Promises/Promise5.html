@@ -1,0 +1,41 @@
+<script>
+    var num1 = parseInt(prompt("Enter first number : "));
+    var num2 = parseInt(prompt("Enter second number : "));
+    
+    function addition(a,b){
+        console.log("Sum : "+(a+b));
+        return new Promise((resolve,reject)=>{
+            resolve(true);
+        });
+    }
+    function subtraction(a,b){
+        console.log("Sub : "+(a-b));
+        return new Promise((resolve,reject)=>{
+            resolve(false);
+        });
+    }
+    function multiplication(a,b){
+        console.log("Mul : "+(a*b));
+        return new Promise((resolve,reject)=>{
+            resolve();
+        });
+    }
+
+    addition(num1,num2).then((value)=>{
+        if(value){
+            subtraction(num1,num2).then((value)=>{
+                if(!value){
+                    multiplication(num1,num2).then(()=>{
+                        console.log("End of Program");
+                    }).catch((error)=>{
+                        console.log(error);
+                    });
+                }
+            }).catch((error)=>{
+                console.log(error);
+            });
+        }
+    }).catch((error)=>{
+        console.log(error);
+    });
+</script>

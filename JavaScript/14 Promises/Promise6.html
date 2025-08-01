@@ -1,0 +1,29 @@
+<script>
+    var num = 10;
+    function increment(num){
+        return new Promise((resolve,reject)=>{
+            console.log(num);
+            resolve(num+2);
+        });
+    }
+    increment(num).then((num)=>{
+            increment(num).then((num)=>{
+                increment(num).then((num)=>{
+                    increment(num).then((num)=>{
+                        console.log(num);
+                        console.log("End of Program");
+                    }).catch((error)=>{
+                        console.log("Error : "+error);
+                    }).finally(()=>{
+                        console.log("Always Executes");
+                    });
+                }).catch((error)=>{
+                    console.log("Error : "+error);
+                });
+            }).catch((error)=>{
+                console.log("Error : "+error);
+            });        
+    }).catch((error)=>{
+        console.log("Error : "+error);
+    });
+</script>

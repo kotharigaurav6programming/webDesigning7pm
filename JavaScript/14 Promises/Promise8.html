@@ -1,0 +1,21 @@
+<script>
+    var num = parseInt(prompt("Enter Number : "));
+    const status={
+        EVEN : "Even Number",
+        ODD : "Odd Number"
+    }
+    function demo(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                (num%2==0) ? resolve(status.EVEN) : reject(status.ODD);
+            },2000);
+        });
+    }
+    demo().then((msg)=>{
+        console.log(msg);
+    }).catch((error)=>{
+        console.log(error);
+    }).finally(()=>{
+        console.log("Always Executes");
+    });
+</script>
