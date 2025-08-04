@@ -1,0 +1,12 @@
+<script>
+    console.log("Before execution");
+    
+    async function myFun(){
+        // return 1;
+        return new Error("Error occured");
+    }
+    console.log(myFun());
+
+    console.log("after execution");
+
+</script>

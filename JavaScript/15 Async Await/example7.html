@@ -1,0 +1,21 @@
+<script>
+    const num = parseInt(prompt("Enter number"));
+    function checkNum(num){
+        return new Promise((resolve,reject)=>{
+            console.log(num);
+            resolve(num+2);
+        });
+    }
+    async function myFun(){
+        try{
+            const res = await checkNum(num);
+            const res1 = await checkNum(res);
+            const res2 = await checkNum(res1);
+            const res3 = await checkNum(res2);
+            console.log(res3);
+        }catch(error){
+            console.log(error);
+        }
+    }
+    myFun();
+</script>

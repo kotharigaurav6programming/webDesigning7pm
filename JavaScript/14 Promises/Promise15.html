@@ -1,0 +1,10 @@
+<script>
+    // const result = Promise.resolve(true);
+    const result = Promise.reject(false);
+
+    result.then((msg)=>{
+        console.log(msg);
+    }).catch((error)=>{
+        console.log(error);
+    });
+</script>

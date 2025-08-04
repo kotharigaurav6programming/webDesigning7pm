@@ -1,0 +1,18 @@
+<script>
+    console.log("Before execution");
+    
+    function demo(){
+        return new Promise((resolve,reject)=>{
+            resolve("output of demo function");
+        });
+    }
+
+    async function myFun(){
+        console.log("inside async before");        
+        const res = await demo();
+        console.log("inside async after : "+res);        
+    }
+    myFun();
+    console.log("after execution");
+
+</script>
