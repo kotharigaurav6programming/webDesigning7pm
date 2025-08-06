@@ -1,0 +1,22 @@
+<script>
+    /*
+    function outerFunction(){
+        function innerFunction(){
+            console.log("Inner Function Called");
+        }
+        innerFunction();
+    }
+    const res = outerFunction();
+    console.log(res);
+    */
+
+   function outerFunction(){
+        function innerFunction(){
+            console.log("Inner Function Called");
+        }
+        return innerFunction();
+    }
+    const res = outerFunction();
+    console.log(res);
+ 
+</script>

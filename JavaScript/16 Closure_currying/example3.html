@@ -1,0 +1,67 @@
+<script>
+    /*
+   function outerFunction(){
+        function innerFunction(){
+            console.log("Inner Function Called");
+        }
+        return innerFunction;
+    }
+    const res = outerFunction();
+    res();
+    */
+
+    /*
+    function outerFunction(){
+        return function innerFunction(){
+            console.log("Inner Function Called");
+        }
+    }
+    const res = outerFunction();
+    res();
+    */
+    /*
+    function outerFunction(){
+        var name = "Andrew Anderson";
+        return function innerFunction(){
+            console.log("Name : "+name);
+        }
+    }
+    const res = outerFunction();
+    res();
+    */
+
+    /*
+    function outerFunction(){
+        var firstName = "Peter";
+        return function innerFunction(lastName){
+            console.log("Full Name : "+firstName+" "+lastName);
+        }
+    }
+    const res = outerFunction();
+    var lastName = "Parker";
+    res(lastName);
+   */
+
+   /*
+    function outerFunction(num1){
+        var firstNum = 20;
+        return function innerFunction(lastNum){
+            console.log("Result : "+(num1*firstNum*lastNum));
+        }
+    }
+    const res = outerFunction(10);
+    var lastNum = 30;
+    res(lastNum);
+  */
+
+     function outerFunction(num1){
+        var firstNum = 20;
+        return function innerFunction(lastNum){
+            return num1*firstNum*lastNum;
+        }
+    }
+    const res = outerFunction(10);
+    var lastNum = 50;
+    var result = res(lastNum);
+    console.log("Result : "+result);
+</script>
