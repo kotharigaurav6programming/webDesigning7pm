@@ -1,0 +1,13 @@
+<script>
+   // example showing the concept of currying
+    function addition(name){
+        return (doy)=>{
+            return (sal)=>{
+                return `Hello ${name}, you are ${new Date().getFullYear()-doy} years old and you earn $${sal}`;
+            }
+        }
+    }   
+    var res1 = addition("Andrew Anderson")(2000)(55555);
+    console.log("Addition : "+res1);
+   
+</script>

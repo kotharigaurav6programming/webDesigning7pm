@@ -1,0 +1,37 @@
+<script>
+    // normal function example
+    /*
+    function addition(a,b,c){
+        return a+b+c;
+    }
+    var res = addition(2,3,4);
+    console.log("Addition : ",res);
+    */
+
+    // example through closure
+    /*
+    function addition(a){
+        return (b)=>{
+            return (c)=>{
+                return a+b+c;
+            }
+        }
+    }   
+    var res1 = addition(2);
+    var res2 = res1(3);
+    var res3 = res2(4);
+    console.log("Addition : "+res3);
+    */
+
+   // example showing the concept of currying
+    function addition(a){
+        return (b)=>{
+            return (c)=>{
+                return a+b+c;
+            }
+        }
+    }   
+    var res1 = addition(2)(3)(4);
+    console.log("Addition : "+res1);
+   
+</script>

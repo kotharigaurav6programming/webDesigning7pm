@@ -1,0 +1,32 @@
+<script>
+   // example showing the concept of currying
+
+   function operator(operator){
+        return (a)=>{
+            return (b)=>{
+                var res;
+                switch(operator){
+                    case '+' : res = a+b; break;
+                    case '-' : res = a-b; break;
+                    case '*' : res = a*b; break;
+                    case '/' : res = a/b; break;
+                    case '%' : res = a%b; break;
+                    default : res = "Invalid"; break;
+                }
+                return res;
+            }
+        }
+   }
+   var add = operator('+'); 
+   var sub = operator('-'); 
+   var mul = operator('*'); 
+   var div = operator('/'); 
+   var mod = operator('%'); 
+   
+   document.write("<br>Add : "+add(5)(2));
+   document.write("<br>Sub : "+sub(5)(2));
+   document.write("<br>Mul : "+mul(5)(2));
+   document.write("<br>Div : "+div(5)(2));
+   document.write("<br>Mod : "+mod(5)(2));
+
+</script>
