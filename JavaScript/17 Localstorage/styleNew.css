@@ -1,0 +1,28 @@
+#box{
+    height: 300px;
+    width: 700px;
+    /* background-color: grey; */
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 40px;
+    color:darkslategray
+}
+
+input[type='text'],input[type='email'],input[type='password']{
+    height: 30px;
+    width: 350px;
+    font-size: 16px;    
+    margin: 5px;
+}
+input[type='submit'],input[type='reset']{
+    height: 35px;
+    width: 355px;
+    font-size: 16px;    
+    margin: 5px;
+    background-color: darkgreen;
+    color:white;
+    border-width: 0px;
+}
