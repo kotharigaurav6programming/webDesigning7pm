@@ -10,8 +10,9 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.dropotron-1.0.js"></script>
 <link rel="stylesheet" href="styleNew.css">
+<script src="myScript.js"></script>
 </head>
-<body style="background-color: lightgreen;">
+<body style="background-color: grey;">
 <div id="wrapper">
 	<div id="header-wrapper">
 		<div id="header">
@@ -50,6 +51,7 @@
 	<!-- end #menu -->
 	<div id="box">
 			<center><h1>Login Form</h1>
+				
 				<input 
 					type="email"
 					placeholder="Enter Email"
@@ -65,7 +67,8 @@
 				<input 
 					type="submit"
 					value="Login"
-				><br>
+				onclick="checkLogin()"
+					><br>
 				<input 
 					type="reset"
 					value="Reset"

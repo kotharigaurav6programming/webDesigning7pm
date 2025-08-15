@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="styleNew.css">
 <script src="myScript.js"></script>
 </head>
-<body style="background-color: lightgreen;">
+<body style="background-color: grey;">
 <div id="wrapper">
 	<div id="header-wrapper">
 		<div id="header">
@@ -51,6 +51,7 @@
 	<!-- end #menu -->
 		<div id="box">
 			<center><h1>Registration Form</h1>
+				<form action="registration.html" onsubmit="addUser()">
 				<input 
 					type="text"
 					placeholder="Enter Username"
@@ -78,12 +79,13 @@
 				<input 
 					type="submit"
 					value="Registration"
-					onclick="addUser()"
-				><br>
+					
+					><br>
 				<input 
 					type="reset"
 					value="Reset"
 				>
+				</form>
 				<br><br>
 				<a href="login.html">Already Registered ? Login Here</a>
 			</center>
