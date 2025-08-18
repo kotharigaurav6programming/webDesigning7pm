@@ -33,6 +33,7 @@ function checkLogin(){
         return obj.email==email && obj.password==password;
     });
     if(res){
+        sessionStorage.setItem("email",email);
         alert("Login Successfull");
         window.location.href="file:///D:/desktop/CodingThinker/webDesigning7pm/JavaScript/17%20Localstorage/profile.html";
     }

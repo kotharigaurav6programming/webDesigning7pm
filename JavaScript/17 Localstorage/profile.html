@@ -9,6 +9,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.dropotron-1.0.js"></script>
+<link rel="stylesheet" href="styleNew.css">
 </head>
 <body>
 <div id="wrapper">
@@ -23,110 +24,186 @@
 	<!-- end #header -->
 	<div id="menu-wrapper">
 		<ul id="menu">
+			<li><a href="">Welcome <span id="printEmail"></span></a></li>
 			<li class="current_page_item"><a href="#"><span>Home</span></a></li>
-			<li><span>Blog</span>
-				<ul>
-					<li class="first"> <a href="index">Maecenas luctus lectus</a> </li>
-					<li> <a href="search">Integer gravida</a> </li>
-					<li class="last"> <a href="about">Ut nonummy rutrum</a> </li>
-				</ul>
-			</li>
-			<li><a href="login.html"><span>Login</span></a></li>
-			<li><a href="registration.html"><span>Registration</span></a></li>
-			<li><span>Links</span>
-				<ul>
-					<li class="first"> <a href="index">Maecenas luctus lectus</a> </li>
-					<li> <a href="search">Integer gravida</a> </li>
-					<li class="last"> <a href="about">Ut nonummy rutrum</a> </li>
-				</ul>
-			</li>
-			<li><a href="#"><span>Contact</span></a></li>
+			
+			<li><span onclick="viewUsers()" style="cursor: pointer;">View Users</span></li>
+			
+			<li><span onclick="logout()" style="cursor: pointer;">Logout</span></li>
 		</ul>
 		<script type="text/javascript">
 			$('#menu').dropotron();
 		</script>
 	</div>
 	<!-- end #menu -->
-	<div id="splash"><img src="images/pics01.jpg" width="980" height="300" alt="" /></div>
-	<div id="page">
-		<div id="content">
-			<div class="contentbg">
-				<div class="post">
-					<h2 class="title"><a href="#">Welcome to commercial</a></h2>
-					<p class="meta">Posted by <a href="#">Someone</a> on May 22, 2012
-						&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
-					<div class="entry">
-						<p>This is <strong>Commercial</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.  The picture in this template is from <a href="http://fotogrph.com/">Fotogrph</a>.The gallery slider and popup gallery used in this template is powered by <a href="http://n33.co/">Poptrox</a> and <a href="http://n33.co/">Slidertron</a>. Dropdown menu is powered by <a href="http://n33.co/">Dropotron</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you’re pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)</p>
-						<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.</p>
+	<div id="demo">
+		<div id="splash"><img src="images/pics01.jpg" width="980" height="300" alt="" /></div>
+		<div id="page">
+			<div id="content">
+				<div class="contentbg">
+					<div class="post">
+						<h2 class="title"><a href="#">Welcome to commercial</a></h2>
+						<p class="meta">Posted by <a href="#">Someone</a> on May 22, 2012
+							&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+						<div class="entry">
+							<p>This is <strong>Commercial</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.  The picture in this template is from <a href="http://fotogrph.com/">Fotogrph</a>.The gallery slider and popup gallery used in this template is powered by <a href="http://n33.co/">Poptrox</a> and <a href="http://n33.co/">Slidertron</a>. Dropdown menu is powered by <a href="http://n33.co/">Dropotron</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you’re pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)</p>
+							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum ipsum. Proin imperdiet est. Phasellus dapibus semper urna. Pellentesque ornare, orci in felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem.</p>
+						</div>
 					</div>
-				</div>
-				<div class="post">
-					<h2 class="title"><a href="#">Lorem ipsum sed aliquam</a></h2>
-					<p class="meta">Posted by <a href="#">Someone</a> on May 19, 2012
-						&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
-					<div class="entry">
-						<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, consectetuer nisl felis ac diam. Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. Mauris vitae nisl nec metus placerat consectetuer. </p>
+					<div class="post">
+						<h2 class="title"><a href="#">Lorem ipsum sed aliquam</a></h2>
+						<p class="meta">Posted by <a href="#">Someone</a> on May 19, 2012
+							&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+						<div class="entry">
+							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Phasellus <a href="#">dapibus semper urna</a>. Pellentesque ornare, consectetuer nisl felis ac diam. Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. Mauris vitae nisl nec metus placerat consectetuer. </p>
+						</div>
 					</div>
-				</div>
-				<div class="post">
-					<h2 class="title"><a href="#">Phasellus pellentesque turpis </a></h2>
-					<p class="meta">Posted by <a href="#">Someone</a> on May 15, 2012
-						&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
-					<div class="entry">
-						<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc.</p>
+					<div class="post">
+						<h2 class="title"><a href="#">Phasellus pellentesque turpis </a></h2>
+						<p class="meta">Posted by <a href="#">Someone</a> on May 15, 2012
+							&nbsp;&bull;&nbsp; <a href="#" class="comments">Comments (64)</a> &nbsp;&bull;&nbsp; <a href="#" class="permalink">Full article</a></p>
+						<div class="entry">
+							<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus placerat consectetuer. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc. Donec ipsum. Proin imperdiet est. Pellentesque ornare, orci in consectetuer hendrerit, urna elit eleifend nunc.</p>
+						</div>
 					</div>
+					<div style="clear: both;">&nbsp;</div>
 				</div>
-				<div style="clear: both;">&nbsp;</div>
 			</div>
-		</div>
-		<!-- end #content -->
-		<div id="sidebar-bg">
-			<div id="sidebar">
-				<ul>
-					<li>
-						<h2>Aliquam tempus</h2>
-						<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
-					</li>
-					<li>
-						<h2>Categories</h2>
-						<ul>
-							<li><a href="#">Aliquam libero</a></li>
-							<li><a href="#">Consectetuer adipiscing elit</a></li>
-							<li><a href="#">Suspendisse iaculis mauris</a></li>
-							<li><a href="#">Urnanet non molestie semper</a></li>
-							<li><a href="#">Proin gravida orci porttitor</a></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Blogroll</h2>
-						<ul>
-							<li><a href="#">Aliquam libero</a></li>
-							<li><a href="#">Suspendisse iaculis mauris</a></li>
-							<li><a href="#">Urnanet non molestie semper</a></li>
-							<li><a href="#">Proin gravida orci porttitor</a></li>
-						</ul>
-					</li>
-					<li>
-						<h2>Archives</h2>
-						<ul>
-							<li><a href="#">Aliquam libero</a></li>
-							<li><a href="#">Consectetuer adipiscing elit</a></li>
-							<li><a href="#">Suspendisse iaculis mauris</a></li>
-							<li><a href="#">Urnanet non molestie semper</a></li>
-							<li><a href="#">Proin gravida orci porttitor</a></li>
-						</ul>
-					</li>
-				</ul>
+			<!-- end #content -->
+			<div id="sidebar-bg">
+				<div id="sidebar">
+					<ul>
+						<li>
+							<h2>Aliquam tempus</h2>
+							<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+						</li>
+						<li>
+							<h2>Categories</h2>
+							<ul>
+								<li><a href="#">Aliquam libero</a></li>
+								<li><a href="#">Consectetuer adipiscing elit</a></li>
+								<li><a href="#">Suspendisse iaculis mauris</a></li>
+								<li><a href="#">Urnanet non molestie semper</a></li>
+								<li><a href="#">Proin gravida orci porttitor</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>Blogroll</h2>
+							<ul>
+								<li><a href="#">Aliquam libero</a></li>
+								<li><a href="#">Suspendisse iaculis mauris</a></li>
+								<li><a href="#">Urnanet non molestie semper</a></li>
+								<li><a href="#">Proin gravida orci porttitor</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>Archives</h2>
+							<ul>
+								<li><a href="#">Aliquam libero</a></li>
+								<li><a href="#">Consectetuer adipiscing elit</a></li>
+								<li><a href="#">Suspendisse iaculis mauris</a></li>
+								<li><a href="#">Urnanet non molestie semper</a></li>
+								<li><a href="#">Proin gravida orci porttitor</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
+			<!-- end #sidebar -->
+			<div style="clear: both;">&nbsp;</div>
 		</div>
-		<!-- end #sidebar -->
-		<div style="clear: both;">&nbsp;</div>
 	</div>
 	<!-- end #page -->
 </div>
+<br><br>
 <div id="footer">
 	<p>2012. Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">fotogrph</a>.</p>
 </div>
 <!-- end #footer -->
+ <script>
+	var email = sessionStorage.getItem("email");
+	document.getElementById("printEmail").innerHTML=email;
+	function viewUsers(){
+		var userData = JSON.parse(localStorage.getItem("data")); 
+		var table = `<table align='center' border='1' cellspacing='0' cellpadding='15'> <caption><h2>User List</h2></caption> <tr><th>S.No</th><th>Username</th><th>Email</th><th>Password</th><th>Address</th><th colspan='2'>Action</th></tr>`;
+		for(var i=0;i<userData.length;i++){
+			table+=`<tr>
+					<td>${i+1}</td>
+					<td>${userData[i].username}</td>
+					<td>${userData[i].email}</td>
+					<td>${userData[i].password}</td>
+					<td>${userData[i].address}</td>
+					<td><button onclick='updateData(${i})'>Update</button></td>
+					<td><button>Delete</button></td>
+					</tr>`;
+		}		
+		table+=`</table>`;
+		document.getElementById("demo").innerHTML=table;					
+	}
+
+	function logout(){
+		sessionStorage.setItem("email",'');
+		alert("Logout Successfully");
+		window.location.href="file:///D:/desktop/CodingThinker/webDesigning7pm/JavaScript/17%20Localstorage/index.html";
+	}
+
+	function updateData(index){
+		var userData = JSON.parse(localStorage.getItem("data"))[index];
+		var displayUpdateForm = `<div id="box">
+			<center><h1>Update Form</h1>
+				<form action="profile.html" onsubmit="updateUserData(${index})">
+				<input 
+					type="text"
+					placeholder="Enter Username"
+					id="username"
+					name="username"
+					value='${userData.username}'
+				><br>
+				<input 
+					type="email"
+					placeholder="Enter Email"
+					id="email"
+					name="email"
+					value='${userData.email}'
+				><br>
+				<input 
+					type="text"
+					placeholder="Enter Password"
+					id="password"
+					name="password"
+					value='${userData.password}'
+				><br>
+				<input 
+					type="text"
+					placeholder="Enter Address"
+					id="address"
+					name="address"
+					value='${userData.address}'
+				><br>
+				<input 
+					type="submit"
+					value="Update"
+					><br>
+				<input 
+					type="reset"
+					value="Reset"
+				>
+				</form>
+				<br><br>
+			</center>
+	</div>`;
+	document.getElementById("demo").innerHTML=displayUpdateForm;
+	}
+
+	function updateUserData(index){
+		var username = document.getElementById("username").value;
+    	var email = document.getElementById("email").value;
+    	var password = document.getElementById("password").value;
+    	var address = document.getElementById("address").value;
+
+    	var userObj = {username,email,password,address};
+		alert(index);
+	}
+	</script>
 </body>
 </html>
