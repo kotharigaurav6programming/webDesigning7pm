@@ -1,0 +1,33 @@
+<script>
+var num1 = parseInt(prompt("Enter first number : "));
+var num2 = parseInt(prompt("Enter second number : "));
+
+    class Demo{
+        setData(num1,num2){
+            this.a=num1;
+            this.b=num2;
+        }
+        add(){
+            document.write("<br>Add : "+(this.a+this.b));
+        }
+        sub(){
+            document.write("<br>Sub : "+(this.a-this.b));
+        }
+        mul(){
+            document.write("<br>Mul : "+(this.a*this.b));
+        }
+        div(){
+            document.write("<br>Div : "+(this.a/this.b));
+        }
+        mod(){
+            document.write("<br>Mod : "+(this.a%this.b));
+        }
+    }
+    const obj = new Demo();
+    obj.setData(num1,num2);
+    obj.add();
+    obj.sub();
+    obj.mul();
+    obj.div();
+    obj.mod();
+</script>

@@ -134,7 +134,7 @@
 					<td>${userData[i].password}</td>
 					<td>${userData[i].address}</td>
 					<td><button onclick='updateData(${i})'>Update</button></td>
-					<td><button>Delete</button></td>
+					<td><button onclick='deleteData(${i})'>Delete</button></td>
 					</tr>`;
 		}		
 		table+=`</table>`;
@@ -156,6 +156,7 @@
 					type="text"
 					placeholder="Enter Username"
 					id="username"
+					required
 					name="username"
 					value='${userData.username}'
 				><br>
@@ -163,6 +164,8 @@
 					type="email"
 					placeholder="Enter Email"
 					id="email"
+					required
+					readonly
 					name="email"
 					value='${userData.email}'
 				><br>
@@ -170,6 +173,7 @@
 					type="text"
 					placeholder="Enter Password"
 					id="password"
+					required
 					name="password"
 					value='${userData.password}'
 				><br>
@@ -177,6 +181,7 @@
 					type="text"
 					placeholder="Enter Address"
 					id="address"
+					required
 					name="address"
 					value='${userData.address}'
 				><br>
@@ -202,8 +207,23 @@
     	var address = document.getElementById("address").value;
 
     	var userObj = {username,email,password,address};
-		alert(index);
+		// alert(index);
+		var userArray = JSON.parse(localStorage.getItem("data"));
+		userArray.splice(index,1);
+		userArray.splice(index,0,userObj);
+		localStorage.setItem("data",JSON.stringify([...userArray]));
+		alert("Data Updated Successfully");
+		window.location.href="file:///D:/desktop/CodingThinker/webDesigning7pm/JavaScript/17%20Localstorage/profile.html";
 	}
+
+		function deleteData(index){
+			var userArray = JSON.parse(localStorage.getItem("data"));
+			userArray.splice(index,1);
+			localStorage.setItem("data",JSON.stringify([...userArray]));
+			window.location.reload();
+			alert("data deleted successfully");
+		}
+
 	</script>
 </body>
 </html>

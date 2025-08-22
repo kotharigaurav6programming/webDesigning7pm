@@ -1,0 +1,19 @@
+<script>
+class Parent{
+    constructor(){
+        document.write("<br>parent constructor called");
+    }
+}
+class Child extends Parent{
+    constructor(){
+        super();
+        this.name = "Andrew Anderson";
+        document.write("<br>child constructor called");
+    }
+    display(){
+        document.write("<br>name : "+this.name);
+    }
+}
+const obj = new Child();
+obj.display();
+</script>

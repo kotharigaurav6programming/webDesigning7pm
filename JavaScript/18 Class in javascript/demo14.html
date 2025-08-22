@@ -1,0 +1,23 @@
+<script>
+class Rectangle{
+    #length;
+    #breadth;
+    setData(length,breadth){
+        this.#length = length;
+        this.#breadth = breadth;
+    }
+    #area(){
+        return this.#length*this.#breadth;
+    }
+    #perimeter(){
+        return 2*(this.#length+this.#breadth);
+    }
+    display(){
+        document.write("<br>Area of rectangle : "+this.#area());
+        document.write("<br>Perimeter of rectangle : "+this.#perimeter());
+    }
+}
+const obj = new Rectangle();
+obj.setData(10,23);
+obj.display();
+</script>

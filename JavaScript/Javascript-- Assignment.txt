@@ -1,0 +1,16 @@
+Javascript-- Assignment | Date : 1 Sept 2025
+Module : a. admin b. user
+Functionality : 
+a. Admin
+  1. Login
+  2. User List >>> Approve
+  3. User Block	
+  4. View Users To do task 	
+  5. logout
+
+b. User
+  1. Register
+  2. Login >>> after admin approval | unblock   
+  3. Add to do task
+  4. Update, delete and retrieve to do task
+  5. logout

@@ -1,0 +1,18 @@
+<script>
+class Parent{
+    display(){
+        document.write("<br>display of parent called");
+    }
+}
+class Child extends Parent {
+    show(){
+        document.write("<br>show of child called");
+    }
+    display(){
+        document.write("<br>display of child called");
+    }
+}
+const obj = new Child();
+obj.show();
+obj.display();
+</script>
