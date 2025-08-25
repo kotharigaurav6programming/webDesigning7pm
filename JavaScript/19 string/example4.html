@@ -1,0 +1,30 @@
+<script>
+    var str = "Hello User How are you User ? ";
+    document.write("<br>include : "+str.includes("User"));
+    document.write("<br>include : "+str.includes("user"));
+    document.write("<br>indexOf : "+str.indexOf("User"));
+    document.write("<br>lastIndexOf : "+str.lastIndexOf("User"));
+    var str1 = "Hello";
+    document.write("<br>match : "+str1.match("User"));
+    document.write("<br>match : "+str1.match("Hello"));
+
+    var s1 = new String("Hello");// String Constructor
+    var s2 = new String("Hello");// String Constructor
+    var s3 = new String("Hello");// String Constructor
+
+    document.write("<br>s1==s2 : "+(s1==s2));
+
+    var str1 = "Hello";
+    var str2 = "Hello";
+    var str3 = "Hello";
+
+    document.write("<br>str1==str2 : "+(str1==str2));
+    document.write("<br>s3==str3 : "+(s3==str3));
+
+    var a = "Hello";
+    str1.concat(" Andrew");
+    document.write("<br>str1 : "+str1);
+    document.write("<br>str1 : "+str1.concat(" Andrew"));
+
+
+</script>

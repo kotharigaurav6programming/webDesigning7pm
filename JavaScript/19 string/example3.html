@@ -1,0 +1,26 @@
+<script>
+    var s1 = "Hello User How are you ?"; 
+    document.write("<br>s1 : "+s1.toUpperCase());
+    document.write("<br>s1 : "+s1.toLowerCase());
+    document.write("<br>replace : "+s1.replace("User","Andrew"));
+    document.write("<br>substring : "+s1.substring(2,12));
+    
+    let colors = ["red", "green", "blue"];
+    colors.splice(1, 1, "yellow", "purple"); // Adds elements at index 1
+    document.write("<br>"+colors);
+
+    var s2 = "Hello User How are you ?";
+    var str = s2.split(" ");
+    str.forEach((element)=>{
+        document.write("<br>"+element);
+    });     
+
+    let color = ["red", "green", "blue"];
+    document.write("<br>"+color.join("-"));
+
+    var st = "Hello";
+    document.write("<br>charAt() : "+st.charAt(2));
+    document.write("<br>charCodeAt() : "+st.charCodeAt(2));
+    document.write("<br>fromCharCode() : "+String.fromCharCode(65));
+
+</script>
