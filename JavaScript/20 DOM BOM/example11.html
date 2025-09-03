@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officiis adipisci fuga libero a assumenda eveniet autem exercitationem architecto. Eveniet at itaque id culpa sapiente vitae soluta odit, cupiditate officiis!</p> <br>
+        <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officiis adipisci fuga libero a assumenda eveniet autem exercitationem architecto. Eveniet at itaque id culpa sapiente vitae soluta odit, cupiditate officiis!</p> <br>
+    </div>
+    <button onclick="myFun()">Remove</button>
+    <button onclick="myFunAdd()">Add</button>
+    <script>
+        var main = document.getElementById("main");
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        function myFun(){
+            main.removeChild(two);
+        }
+        function myFunAdd(){
+            var three = document.createElement("p");
+            var textData = document.createTextNode("This is example");
+            three.appendChild(textData);
+            main.appendChild(three);
+        }
+        
+    </script>
+</body>
+</html>

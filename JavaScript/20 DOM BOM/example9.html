@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="demo">Lorem ipsum dolor sit amet.</div>
+    <div class="demo">Lorem ipsum dolor sit amet.</div>
+    <div class="demo">Lorem ipsum dolor sit amet.</div>
+    <div class="demo">Lorem ipsum dolor sit amet.</div> 
+    <button onclick="querySelectorFun1()">QuerySelector</button>
+    <button onclick="querySelectorFun2()">QuerySelectorAll</button>
+    
+    <script>
+        function querySelectorFun1(){
+            document.querySelector(".demo").style.color="red";
+        }
+        function querySelectorFun2(){
+            var arr = document.querySelectorAll(".demo");
+            for(i=0;i<arr.length;i++){
+                arr[i].style.color = "orange";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .oldclass{
+            background-color: crimson;
+            color:white;
+        }
+        .newclass{
+            background-color: #234567;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" class="oldclass">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore laudantium ut perferendis earum minima harum incidunt quo expedita dolore.
+    </div>
+    <script>
+        var demo = document.getElementById("demo");
+        demo.classList.remove("oldclass");
+        demo.classList.add("newclass");
+    </script>
+</body>
+</html>

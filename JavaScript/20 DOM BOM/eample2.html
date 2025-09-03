@@ -1,0 +1,11 @@
+<script>
+    const obj = {
+        name : "Peter Parker",
+        age : 45
+    }
+    function printDetails(city,state){
+        return `Hello ${this.name},your age is ${obj.age} and you live in ${city},${state}`
+    }
+    const result = printDetails.apply(obj,["Indore","Madhya Pradesh"]);
+    document.write(result);
+</script>

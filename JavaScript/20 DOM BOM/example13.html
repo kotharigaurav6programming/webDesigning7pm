@@ -1,0 +1,19 @@
+<script>
+    var obj = {
+        name:"Andrew Anderson",
+        age : 56
+    }
+    document.write("<br>name : "+obj.name);
+    document.write("<br>age : "+obj.age);
+    document.write("<br><br>isSealed() : "+Object.isSealed(obj));
+    document.write("<br>seal() : "+Object.seal(obj));
+    document.write("<br>isSealed() : "+Object.isSealed(obj));
+
+    obj.name = "Peter Parker";
+    delete obj.age;
+    obj.address = "Indore";
+    document.write("<br><br>name : "+obj.name);
+    document.write("<br>age : "+obj.age);
+    document.write("<br>address : "+obj.address);
+
+</script>
